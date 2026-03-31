@@ -1,0 +1,11 @@
+<svg id="Info" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracé_58" data-name="Tracé 58" d="M7.333-22a7.333,7.333,0,0,1,7.333,7.333A7.333,7.333,0,0,1,7.333-7.333,7.333,7.333,0,0,1,0-14.667,7.333,7.333,0,0,1,7.333-22Zm0,1.333a6,6,0,0,0-6,6,6,6,0,0,0,6,6,6,6,0,0,0,6-6A6,6,0,0,0,7.333-20.667Zm0,5.333A.667.667,0,0,1,8-14.667v2A.667.667,0,0,1,7.333-12a.667.667,0,0,1-.667-.667v-2A.667.667,0,0,1,7.333-15.333Zm0-2A.667.667,0,0,1,8-16.667.667.667,0,0,1,7.333-16a.667.667,0,0,1-.667-.667A.667.667,0,0,1,7.333-17.333Z" transform="translate(0 22)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <rect id="Zone" width="16" height="16" fill="none"/>
+  <g id="Icon" transform="translate(0.667 0.667)" clip-path="url(#clip-path)">
+    <path id="Tracé_57" data-name="Tracé 57" d="M-5-5.667H16.333V-27H-5Z" transform="translate(1.667 23.667)" fill="#0050d7"/>
+  </g>
+</svg>

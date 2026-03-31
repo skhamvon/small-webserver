@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path id="SVGID" class="cls-1" d="m22.16,13.71v-4.44c0-1.52.89-3.05,2.29-3.05h3.81V0h-4.57c-7.24.25-8.63,4.44-8.76,8.76h0v4.95h-3.68v6.22h3.68v20.06h7.24v-19.94h5.46l1.14-6.22h-6.6v-.13Z"/>
+</svg>

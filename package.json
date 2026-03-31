@@ -1,0 +1,23 @@
+{
+  "name": "hackathon-webserver",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n remote,host,server -c magenta,cyan,green \"npm run dev -w @hackathon/abtest-remote\" \"npm run dev -w @hackathon/host\" \"npm run dev -w @hackathon/server\"",
+    "build": "npm run build -w @hackathon/abtest-remote && npm run build -w @hackathon/host && npm run build -w @hackathon/server",
+    "start": "npm run start -w @hackathon/server",
+    "preview": "npm run build && npm start",
+    "fix:ovh": "node scripts/normalize-ovh-filenames.mjs && node scripts/fix-ovh-html.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

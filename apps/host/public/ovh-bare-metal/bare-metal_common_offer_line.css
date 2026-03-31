@@ -1,0 +1,3171 @@
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+@font-face {
+  font-family: icons;
+  src: url("icons.woff2%3F9cee8d614eb5d2fd4c8229be32def1fe") format("woff2"), url("icons.woff%3F9cee8d614eb5d2fd4c8229be32def1fe") format("woff"), url("icons.ttf%3F9cee8d614eb5d2fd4c8229be32def1fe") format("truetype"), url("icons.eot%3F9cee8d614eb5d2fd4c8229be32def1fe") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url("source-sans-pro-latin-ext-300-normal.woff2") format("woff2"), url("source-sans-pro-all-300-normal.woff") format("woff");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url("source-sans-pro-latin-300-normal.woff2") format("woff2"), url("source-sans-pro-all-300-normal.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("source-sans-pro-latin-ext-400-normal.woff2") format("woff2"), url("source-sans-pro-all-400-normal.woff") format("woff");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("source-sans-pro-latin-400-normal.woff2") format("woff2"), url("source-sans-pro-all-400-normal.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Source Sans Pro Italic"), local("SourceSansPro-Italic"), url("source-sans-pro-latin-ext-400-italic.woff2") format("woff2"), url("source-sans-pro-all-400-italic.woff") format("woff");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Source Sans Pro Italic"), local("SourceSansPro-Italic"), url("source-sans-pro-latin-400-italic.woff2") format("woff2"), url("source-sans-pro-all-400-italic.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local("Source Sans Pro SemiBold"), local("SourceSansPro-SemiBold"), url("source-sans-pro-latin-ext-600-normal.woff2") format("woff2"), url("source-sans-pro-all-600-normal.woff") format("woff");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local("Source Sans Pro SemiBold"), local("SourceSansPro-SemiBold"), url("source-sans-pro-latin-600-normal.woff2") format("woff2"), url("source-sans-pro-all-600-normal.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("source-sans-pro-latin-ext-700-normal.woff2") format("woff2"), url("source-sans-pro-all-700-normal.woff") format("woff");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("source-sans-pro-latin-700-normal.woff2") format("woff2"), url("source-sans-pro-all-700-normal.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.ods-footer ul {
+  list-style: none;
+}
+
+.ods-footer__menu-level-1 {
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.ods-footer__menu-level-1 .ods-footer__menu__item {
+  line-height: 1.25em;
+}
+
+.ods-footer__link {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #bef1ff;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  word-wrap: normal;
+}
+
+:root {
+  --ods-breakpoint-xs: 36em;
+  --ods-breakpoint-sm: 48em;
+  --ods-breakpoint-md: 62em;
+  --ods-breakpoint-lg: 75em;
+  --ods-breakpoint-xl: 87.5em;
+}
+
+:root {
+  --ods-size-ratio: 1;
+  --ods-size-01: calc(0.0625rem * var(--ods-size-ratio));
+  --ods-size-n-01: calc(-1 * var(--ods-size-01));
+  --ods-size-02: calc(0.125rem * var(--ods-size-ratio));
+  --ods-size-n-02: calc(-1 * var(--ods-size-02));
+  --ods-size-03: calc(0.25rem * var(--ods-size-ratio));
+  --ods-size-n-03: calc(-1 * var(--ods-size-03));
+  --ods-size-04: calc(0.5rem * var(--ods-size-ratio));
+  --ods-size-n-04: calc(-1 * var(--ods-size-04));
+  --ods-size-05: calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-n-05: calc(-1 * var(--ods-size-05));
+  --ods-size-06: calc(1rem * var(--ods-size-ratio));
+  --ods-size-n-06: calc(-1 * var(--ods-size-06));
+  --ods-size-07: calc(1.25rem * var(--ods-size-ratio));
+  --ods-size-n-07: calc(-1 * var(--ods-size-07));
+  --ods-size-08: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-n-08: calc(-1 * var(--ods-size-08));
+  --ods-size-09: calc(2rem * var(--ods-size-ratio));
+  --ods-size-n-09: calc(-1 * var(--ods-size-09));
+  --ods-size-10: calc(2.5rem * var(--ods-size-ratio));
+  --ods-size-n-10: calc(-1 * var(--ods-size-10));
+  --ods-size-11: calc(3rem * var(--ods-size-ratio));
+  --ods-size-n-11: calc(-1 * var(--ods-size-11));
+}
+
+:root {
+  --ods-size-stack-01: calc(0.0625rem * var(--ods-size-ratio));
+  --ods-size-stack-n-01: calc(-1 * calc(0.0625rem * var(--ods-size-ratio)));
+  --ods-size-stack-02: calc(0.125rem * var(--ods-size-ratio));
+  --ods-size-stack-n-02: calc(-1 * calc(0.125rem * var(--ods-size-ratio)));
+  --ods-size-stack-03: calc(0.25rem * var(--ods-size-ratio));
+  --ods-size-stack-n-03: calc(-1 * calc(0.25rem * var(--ods-size-ratio)));
+  --ods-size-stack-04: calc(0.5rem * var(--ods-size-ratio));
+  --ods-size-stack-n-04: calc(-1 * calc(0.5rem * var(--ods-size-ratio)));
+  --ods-size-stack-05: calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-stack-n-05: calc(-1 * calc(0.75rem * var(--ods-size-ratio)));
+  --ods-size-stack-default: calc(1rem * var(--ods-size-ratio));
+  --ods-size-stack-n-default: calc(-1 * var(--ods-size-stack-default));
+  --ods-size-stack-06: calc(1rem * var(--ods-size-ratio));
+  --ods-size-stack-n-06: calc(-1 * calc(1rem * var(--ods-size-ratio)));
+  --ods-size-stack-07: calc(1.25rem * var(--ods-size-ratio));
+  --ods-size-stack-n-07: calc(-1 * calc(1.25rem * var(--ods-size-ratio)));
+  --ods-size-stack-08: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-stack-n-08: calc(-1 * calc(1.5rem * var(--ods-size-ratio)));
+  --ods-size-stack-09: calc(2rem * var(--ods-size-ratio));
+  --ods-size-stack-n-09: calc(-1 * calc(2rem * var(--ods-size-ratio)));
+  --ods-size-stack-10: calc(2.5rem * var(--ods-size-ratio));
+  --ods-size-stack-n-10: calc(-1 * calc(2.5rem * var(--ods-size-ratio)));
+  --ods-size-stack-11: calc(3rem * var(--ods-size-ratio));
+  --ods-size-stack-n-11: calc(-1 * calc(3rem * var(--ods-size-ratio)));
+  --ods-size-inline-01: calc(0.0625rem * var(--ods-size-ratio));
+  --ods-size-inline-n-01: calc(-1 * calc(0.0625rem * var(--ods-size-ratio)));
+  --ods-size-inline-02: calc(0.125rem * var(--ods-size-ratio));
+  --ods-size-inline-n-02: calc(-1 * calc(0.125rem * var(--ods-size-ratio)));
+  --ods-size-inline-03: calc(0.25rem * var(--ods-size-ratio));
+  --ods-size-inline-n-03: calc(-1 * calc(0.25rem * var(--ods-size-ratio)));
+  --ods-size-inline-04: calc(0.5rem * var(--ods-size-ratio));
+  --ods-size-inline-n-04: calc(-1 * calc(0.5rem * var(--ods-size-ratio)));
+  --ods-size-inline-05: calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-inline-n-05: calc(-1 * calc(0.75rem * var(--ods-size-ratio)));
+  --ods-size-inline-default: calc(1rem * var(--ods-size-ratio));
+  --ods-size-inline-n-default: calc(-1 * var(--ods-size-inline-default));
+  --ods-size-inline-06: calc(1rem * var(--ods-size-ratio));
+  --ods-size-inline-n-06: calc(-1 * calc(1rem * var(--ods-size-ratio)));
+  --ods-size-inline-07: calc(1.25rem * var(--ods-size-ratio));
+  --ods-size-inline-n-07: calc(-1 * calc(1.25rem * var(--ods-size-ratio)));
+  --ods-size-inline-08: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-inline-n-08: calc(-1 * calc(1.5rem * var(--ods-size-ratio)));
+  --ods-size-inset-01: calc(0.0625rem * var(--ods-size-ratio));
+  --ods-size-inset-01-x: calc(0.0625rem * var(--ods-size-ratio));
+  --ods-size-inset-01-y: calc(0.0625rem * var(--ods-size-ratio));
+  --ods-size-inset-n-01: calc(-1 * calc(0.0625rem * var(--ods-size-ratio)));
+  --ods-size-inset-02: calc(0.125rem * var(--ods-size-ratio));
+  --ods-size-inset-02-x: calc(0.125rem * var(--ods-size-ratio));
+  --ods-size-inset-02-y: calc(0.125rem * var(--ods-size-ratio));
+  --ods-size-inset-n-02: calc(-1 * calc(0.125rem * var(--ods-size-ratio)));
+  --ods-size-inset-03: calc(0.25rem * var(--ods-size-ratio));
+  --ods-size-inset-03-x: calc(0.25rem * var(--ods-size-ratio));
+  --ods-size-inset-03-y: calc(0.25rem * var(--ods-size-ratio));
+  --ods-size-inset-n-03: calc(-1 * calc(0.25rem * var(--ods-size-ratio)));
+  --ods-size-inset-04: calc(0.5rem * var(--ods-size-ratio));
+  --ods-size-inset-04-x: calc(0.5rem * var(--ods-size-ratio));
+  --ods-size-inset-04-y: calc(0.5rem * var(--ods-size-ratio));
+  --ods-size-inset-n-04: calc(-1 * calc(0.5rem * var(--ods-size-ratio)));
+  --ods-size-inset-05: calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-inset-05-x: calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-inset-05-y: calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-inset-n-05: calc(-1 * calc(0.75rem * var(--ods-size-ratio)));
+  --ods-size-inset-default: calc(1rem * var(--ods-size-ratio));
+  --ods-size-inset-default-x: calc(1rem * var(--ods-size-ratio));
+  --ods-size-inset-default-y: calc(1rem * var(--ods-size-ratio));
+  --ods-size-inset-n-default: calc(-1 * var(--ods-size-inset-default));
+  --ods-size-inset-06: calc(1rem * var(--ods-size-ratio));
+  --ods-size-inset-06-x: calc(1rem * var(--ods-size-ratio));
+  --ods-size-inset-06-y: calc(1rem * var(--ods-size-ratio));
+  --ods-size-inset-n-06: calc(-1 * calc(1rem * var(--ods-size-ratio)));
+  --ods-size-inset-07: calc(1.25rem * var(--ods-size-ratio));
+  --ods-size-inset-07-x: calc(1.25rem * var(--ods-size-ratio));
+  --ods-size-inset-07-y: calc(1.25rem * var(--ods-size-ratio));
+  --ods-size-inset-n-07: calc(-1 * calc(1.25rem * var(--ods-size-ratio)));
+  --ods-size-inset-08: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-inset-08-x: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-inset-08-y: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-inset-n-08: calc(-1 * calc(1.5rem * var(--ods-size-ratio)));
+  --ods-size-squish-01: calc(0.0625rem * var(--ods-size-ratio))
+    calc(0.09375rem * var(--ods-size-ratio));
+  --ods-size-squish-01-x: calc(0.09375rem * var(--ods-size-ratio));
+  --ods-size-squish-01-y: calc(0.0625rem * var(--ods-size-ratio));
+  --ods-size-squish-n-01: calc(
+    -1 * calc(0.0625rem * var(--ods-size-ratio)) calc(0.09375rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-squish-02: calc(0.125rem * var(--ods-size-ratio))
+    calc(0.1875rem * var(--ods-size-ratio));
+  --ods-size-squish-02-x: calc(0.1875rem * var(--ods-size-ratio));
+  --ods-size-squish-02-y: calc(0.125rem * var(--ods-size-ratio));
+  --ods-size-squish-n-02: calc(
+    -1 * calc(0.125rem * var(--ods-size-ratio)) calc(0.1875rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-squish-03: calc(0.25rem * var(--ods-size-ratio))
+    calc(0.375rem * var(--ods-size-ratio));
+  --ods-size-squish-03-x: calc(0.375rem * var(--ods-size-ratio));
+  --ods-size-squish-03-y: calc(0.25rem * var(--ods-size-ratio));
+  --ods-size-squish-n-03: calc(
+    -1 * calc(0.25rem * var(--ods-size-ratio)) calc(0.375rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-squish-04: calc(0.5rem * var(--ods-size-ratio))
+    calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-squish-04-x: calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-squish-04-y: calc(0.5rem * var(--ods-size-ratio));
+  --ods-size-squish-n-04: calc(
+    -1 * calc(0.5rem * var(--ods-size-ratio)) calc(0.75rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-squish-05: calc(0.75rem * var(--ods-size-ratio))
+    calc(1.125rem * var(--ods-size-ratio));
+  --ods-size-squish-05-x: calc(1.125rem * var(--ods-size-ratio));
+  --ods-size-squish-05-y: calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-squish-n-05: calc(
+    -1 * calc(0.75rem * var(--ods-size-ratio)) calc(1.125rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-squish-default: calc(1rem * var(--ods-size-ratio))
+    calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-squish-default-x: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-squish-default-y: calc(1rem * var(--ods-size-ratio));
+  --ods-size-squish-n-default: calc(-1 * calc(1rem * var(--ods-size-ratio)))
+    calc(-1 * calc(1.5rem * var(--ods-size-ratio)));
+  --ods-size-squish-06: calc(1rem * var(--ods-size-ratio))
+    calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-squish-06-x: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-squish-06-y: calc(1rem * var(--ods-size-ratio));
+  --ods-size-squish-n-06: calc(
+    -1 * calc(1rem * var(--ods-size-ratio)) calc(1.5rem * var(--ods-size-ratio))
+  );
+  --ods-size-squish-07: calc(1.25rem * var(--ods-size-ratio))
+    calc(1.875rem * var(--ods-size-ratio));
+  --ods-size-squish-07-x: calc(1.875rem * var(--ods-size-ratio));
+  --ods-size-squish-07-y: calc(1.25rem * var(--ods-size-ratio));
+  --ods-size-squish-n-07: calc(
+    -1 * calc(1.25rem * var(--ods-size-ratio)) calc(1.875rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-squish-08: calc(1.5rem * var(--ods-size-ratio))
+    calc(2.25rem * var(--ods-size-ratio));
+  --ods-size-squish-08-x: calc(2.25rem * var(--ods-size-ratio));
+  --ods-size-squish-08-y: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-squish-n-08: calc(
+    -1 * calc(1.5rem * var(--ods-size-ratio)) calc(2.25rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-stretch-01: calc(0.09375rem * var(--ods-size-ratio))
+    calc(0.0625rem * var(--ods-size-ratio));
+  --ods-size-stretch-01-x: calc(0.0625rem * var(--ods-size-ratio));
+  --ods-size-stretch-01-y: calc(0.09375rem * var(--ods-size-ratio));
+  --ods-size-stretch-n-01: calc(
+    -1 * calc(0.09375rem * var(--ods-size-ratio)) calc(0.0625rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-stretch-02: calc(0.1875rem * var(--ods-size-ratio))
+    calc(0.125rem * var(--ods-size-ratio));
+  --ods-size-stretch-02-x: calc(0.125rem * var(--ods-size-ratio));
+  --ods-size-stretch-02-y: calc(0.1875rem * var(--ods-size-ratio));
+  --ods-size-stretch-n-02: calc(
+    -1 * calc(0.1875rem * var(--ods-size-ratio)) calc(0.125rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-stretch-03: calc(0.375rem * var(--ods-size-ratio))
+    calc(0.25rem * var(--ods-size-ratio));
+  --ods-size-stretch-03-x: calc(0.25rem * var(--ods-size-ratio));
+  --ods-size-stretch-03-y: calc(0.375rem * var(--ods-size-ratio));
+  --ods-size-stretch-n-03: calc(
+    -1 * calc(0.375rem * var(--ods-size-ratio)) calc(0.25rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-stretch-04: calc(0.75rem * var(--ods-size-ratio))
+    calc(0.5rem * var(--ods-size-ratio));
+  --ods-size-stretch-04-x: calc(0.5rem * var(--ods-size-ratio));
+  --ods-size-stretch-04-y: calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-stretch-n-04: calc(
+    -1 * calc(0.75rem * var(--ods-size-ratio)) calc(0.5rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-stretch-05: calc(1.125rem * var(--ods-size-ratio))
+    calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-stretch-05-x: calc(0.75rem * var(--ods-size-ratio));
+  --ods-size-stretch-05-y: calc(1.125rem * var(--ods-size-ratio));
+  --ods-size-stretch-n-05: calc(
+    -1 * calc(1.125rem * var(--ods-size-ratio)) calc(0.75rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-stretch-default: calc(1.5rem * var(--ods-size-ratio))
+    calc(1rem * var(--ods-size-ratio));
+  --ods-size-stretch-default-x: calc(1rem * var(--ods-size-ratio));
+  --ods-size-stretch-default-y: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-stretch-n-default: calc(-1 * calc(1.5rem * var(--ods-size-ratio)))
+    calc(-1 * calc(1rem * var(--ods-size-ratio)));
+  --ods-size-stretch-06: calc(1.5rem * var(--ods-size-ratio))
+    calc(1rem * var(--ods-size-ratio));
+  --ods-size-stretch-06-x: calc(1rem * var(--ods-size-ratio));
+  --ods-size-stretch-06-y: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-stretch-n-06: calc(
+    -1 * calc(1.5rem * var(--ods-size-ratio)) calc(1rem * var(--ods-size-ratio))
+  );
+  --ods-size-stretch-07: calc(1.875rem * var(--ods-size-ratio))
+    calc(1.25rem * var(--ods-size-ratio));
+  --ods-size-stretch-07-x: calc(1.25rem * var(--ods-size-ratio));
+  --ods-size-stretch-07-y: calc(1.875rem * var(--ods-size-ratio));
+  --ods-size-stretch-n-07: calc(
+    -1 * calc(1.875rem * var(--ods-size-ratio)) calc(1.25rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-stretch-08: calc(2.25rem * var(--ods-size-ratio))
+    calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-stretch-08-x: calc(1.5rem * var(--ods-size-ratio));
+  --ods-size-stretch-08-y: calc(2.25rem * var(--ods-size-ratio));
+  --ods-size-stretch-n-08: calc(
+    -1 * calc(2.25rem * var(--ods-size-ratio)) calc(1.5rem *
+          var(--ods-size-ratio))
+  );
+  --ods-size-border-radius-01: calc(0.25rem * var(--ods-size-ratio));
+  --ods-size-border-radius-02: calc(0.5rem * var(--ods-size-ratio));
+  --ods-size-border-radius-03: calc(1rem * var(--ods-size-ratio));
+}
+
+:root {
+  --ods-typo-size-ratio: 1;
+  --ods-typo-size-01: calc(0.75rem * var(--ods-typo-size-ratio));
+  --ods-typo-size-02: calc(0.875rem * var(--ods-typo-size-ratio));
+  --ods-typo-size-03: calc(1rem * var(--ods-typo-size-ratio));
+  --ods-typo-size-04: calc(1.125rem * var(--ods-typo-size-ratio));
+  --ods-typo-size-05: calc(1.25rem * var(--ods-typo-size-ratio));
+  --ods-typo-size-06: calc(1.5rem * var(--ods-typo-size-ratio));
+  --ods-typo-size-07: calc(1.75rem * var(--ods-typo-size-ratio));
+  --ods-typo-size-08: calc(2.25rem * var(--ods-typo-size-ratio));
+  --ods-typo-size-09: calc(3.375rem * var(--ods-typo-size-ratio));
+  --ods-line-height-size-01: calc(0.875rem * var(--ods-typo-size-ratio));
+  --ods-line-height-size-02: calc(1.125rem * var(--ods-typo-size-ratio));
+  --ods-line-height-size-03: calc(1.25rem * var(--ods-typo-size-ratio));
+  --ods-line-height-size-04: calc(1.375rem * var(--ods-typo-size-ratio));
+  --ods-line-height-size-05: calc(1.75rem * var(--ods-typo-size-ratio));
+  --ods-line-height-size-06: calc(2rem * var(--ods-typo-size-ratio));
+  --ods-line-height-size-07: calc(2.188rem * var(--ods-typo-size-ratio));
+  --ods-line-height-size-08: calc(2.813rem * var(--ods-typo-size-ratio));
+  --ods-line-height-size-09: calc(4.188rem * var(--ods-typo-size-ratio));
+  --ods-letter-spacing-size-01: calc(-0.019rem * var(--ods-typo-size-ratio));
+  --ods-letter-spacing-size-02: calc(0rem * var(--ods-typo-size-ratio));
+}
+
+:root {
+  --ods-typo-weight-extra-light: 200;
+  --ods-typo-weight-light: 300;
+  --ods-typo-weight-regular: 400;
+  --ods-typo-weight-semibold: 600;
+  --ods-typo-weight-bold: 700;
+  --ods-typo-weight-black: 900;
+  --ods-typography-title-lg-font-weight: 700;
+  --ods-typography-title-xs-font-weight: 700;
+}
+
+:root {
+  --ods-font-family: 'Source Sans Pro', 'Trebuchet MS', Arial, 'Segoe UI',
+    sans-serif;
+}
+
+:root {
+  --ods-color-gray-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-000-list: 0deg, 0%, 100%;
+  --ods-color-gray-050: hsla(0deg, 0%, 95%, 1);
+  --ods-color-gray-050-list: 0deg, 0%, 95%;
+  --ods-color-gray-100: hsla(0deg, 0%, 90%, 1);
+  --ods-color-gray-100-list: 0deg, 0%, 90%;
+  --ods-color-gray-200: hsla(0deg, 0%, 80%, 1);
+  --ods-color-gray-200-list: 0deg, 0%, 80%;
+  --ods-color-gray-300: hsla(0deg, 0%, 70%, 1);
+  --ods-color-gray-300-list: 0deg, 0%, 70%;
+  --ods-color-gray-400: hsla(0deg, 0%, 60%, 1);
+  --ods-color-gray-400-list: 0deg, 0%, 60%;
+  --ods-color-gray-500: hsla(0deg, 0%, 50%, 1);
+  --ods-color-gray-500-list: 0deg, 0%, 50%;
+  --ods-color-gray-600: hsla(0deg, 0%, 40%, 1);
+  --ods-color-gray-600-list: 0deg, 0%, 40%;
+  --ods-color-gray-700: hsla(0deg, 0%, 30%, 1);
+  --ods-color-gray-700-list: 0deg, 0%, 30%;
+  --ods-color-gray-800: hsla(0deg, 0%, 20%, 1);
+  --ods-color-gray-800-list: 0deg, 0%, 20%;
+  --ods-color-gray-900: hsla(0deg, 0%, 10%, 1);
+  --ods-color-gray-900-list: 0deg, 0%, 10%;
+  --ods-color-gray-1000: hsla(0deg, 0%, 0%, 1);
+  --ods-color-gray-1000-list: 0deg, 0%, 0%;
+  --ods-color-gray-000-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-gray-000-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-gray-050-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-gray-050-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-gray-100-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-gray-100-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-gray-200-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-gray-200-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-gray-300-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-gray-300-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-gray-400-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-gray-400-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-gray-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-gray-600-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-600-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-gray-700-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-700-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-gray-800-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-800-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-gray-900-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-900-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-gray-1000-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-1000-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-blue-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-blue-000-list: 0deg, 0%, 100%;
+  --ods-color-blue-050: hsla(186deg, 100%, 98%, 1);
+  --ods-color-blue-050-list: 186deg, 100%, 98%;
+  --ods-color-blue-075: hsla(193deg, 100%, 94%, 1);
+  --ods-color-blue-075-list: 193deg, 100%, 94%;
+  --ods-color-blue-100: hsla(193deg, 100%, 87%, 1);
+  --ods-color-blue-100-list: 193deg, 100%, 87%;
+  --ods-color-blue-200: hsla(198deg, 97%, 76%, 1);
+  --ods-color-blue-200-list: 198deg, 97%, 76%;
+  --ods-color-blue-300: hsla(204deg, 90%, 63%, 1);
+  --ods-color-blue-300-list: 204deg, 90%, 63%;
+  --ods-color-blue-400: hsla(210deg, 84%, 50%, 1);
+  --ods-color-blue-400-list: 210deg, 84%, 50%;
+  --ods-color-blue-500: hsla(218deg, 100%, 42%, 1);
+  --ods-color-blue-500-list: 218deg, 100%, 42%;
+  --ods-color-blue-600: hsla(226deg, 100%, 37%, 1);
+  --ods-color-blue-600-list: 226deg, 100%, 37%;
+  --ods-color-blue-700: hsla(235deg, 100%, 31%, 1);
+  --ods-color-blue-700-list: 235deg, 100%, 31%;
+  --ods-color-blue-800: hsla(225deg, 100%, 18%, 1);
+  --ods-color-blue-800-list: 225deg, 100%, 18%;
+  --ods-color-blue-900: hsla(215deg, 100%, 6%, 1);
+  --ods-color-blue-900-list: 215deg, 100%, 6%;
+  --ods-color-blue-000-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-blue-000-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-blue-050-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-blue-050-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-blue-075-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-blue-075-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-blue-100-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-blue-100-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-blue-200-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-blue-200-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-blue-300-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-blue-300-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-blue-400-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-blue-400-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-blue-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-blue-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-blue-600-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-blue-600-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-blue-700-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-blue-700-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-blue-800-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-blue-800-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-blue-900-contrasted: hsla(225deg, 100%, 18%, 1);
+  --ods-color-blue-900-contrasted-list: 225deg, 100%, 18%;
+  --ods-color-gray-blue-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-blue-000-list: 0deg, 0%, 100%;
+  --ods-color-gray-blue-100: hsla(234deg, 13%, 85%, 1);
+  --ods-color-gray-blue-100-list: 234deg, 13%, 85%;
+  --ods-color-gray-blue-500: hsla(233deg, 31%, 44%, 1);
+  --ods-color-gray-blue-500-list: 233deg, 31%, 44%;
+  --ods-color-gray-blue-000-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-blue-000-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-gray-blue-100-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-blue-100-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-gray-blue-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-gray-blue-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-red-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-red-000-list: 0deg, 0%, 100%;
+  --ods-color-red-100: hsla(344deg, 100%, 95%, 1);
+  --ods-color-red-100-list: 344deg, 100%, 95%;
+  --ods-color-red-300: hsla(345deg, 100%, 91%, 1);
+  --ods-color-red-300-list: 345deg, 100%, 91%;
+  --ods-color-red-400: hsla(357deg, 63%, 67%, 1);
+  --ods-color-red-400-list: 357deg, 63%, 67%;
+  --ods-color-red-500: hsla(0deg, 75%, 43%, 1);
+  --ods-color-red-500-list: 0deg, 75%, 43%;
+  --ods-color-red-000-contrasted: hsla(0deg, 75%, 43%, 1);
+  --ods-color-red-000-contrasted-list: 0deg, 75%, 43%;
+  --ods-color-red-100-contrasted: hsla(0deg, 75%, 43%, 1);
+  --ods-color-red-100-contrasted-list: 0deg, 75%, 43%;
+  --ods-color-red-300-contrasted: hsla(0deg, 75%, 43%, 1);
+  --ods-color-red-300-contrasted-list: 0deg, 75%, 43%;
+  --ods-color-red-400-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-red-400-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-red-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-red-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-yellow-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-yellow-000-list: 0deg, 0%, 100%;
+  --ods-color-yellow-100: hsla(50deg, 97%, 88%, 1);
+  --ods-color-yellow-100-list: 50deg, 97%, 88%;
+  --ods-color-yellow-300: hsla(50deg, 98%, 76%, 1);
+  --ods-color-yellow-300-list: 50deg, 98%, 76%;
+  --ods-color-yellow-400: hsla(30deg, 95%, 61%, 1);
+  --ods-color-yellow-400-list: 30deg, 95%, 61%;
+  --ods-color-yellow-500: hsla(20deg, 88%, 32%, 1);
+  --ods-color-yellow-500-list: 20deg, 88%, 32%;
+  --ods-color-yellow-000-contrasted: hsla(20deg, 88%, 32%, 1);
+  --ods-color-yellow-000-contrasted-list: 20deg, 88%, 32%;
+  --ods-color-yellow-100-contrasted: hsla(20deg, 88%, 32%, 1);
+  --ods-color-yellow-100-contrasted-list: 20deg, 88%, 32%;
+  --ods-color-yellow-300-contrasted: hsla(20deg, 88%, 32%, 1);
+  --ods-color-yellow-300-contrasted-list: 20deg, 88%, 32%;
+  --ods-color-yellow-400-contrasted: hsla(20deg, 88%, 32%, 1);
+  --ods-color-yellow-400-contrasted-list: 20deg, 88%, 32%;
+  --ods-color-yellow-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-yellow-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-green-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-green-000-list: 0deg, 0%, 100%;
+  --ods-color-green-100: hsla(84deg, 66%, 92%, 1);
+  --ods-color-green-100-list: 84deg, 66%, 92%;
+  --ods-color-green-300: hsla(85deg, 68%, 84%, 1);
+  --ods-color-green-300-list: 85deg, 68%, 84%;
+  --ods-color-green-400: hsla(99deg, 42%, 58%, 1);
+  --ods-color-green-400-list: 99deg, 42%, 58%;
+  --ods-color-green-500: hsla(104deg, 96%, 26%, 1);
+  --ods-color-green-500-list: 104deg, 96%, 26%;
+  --ods-color-green-000-contrasted: hsla(104deg, 96%, 26%, 1);
+  --ods-color-green-000-contrasted-list: 104deg, 96%, 26%;
+  --ods-color-green-100-contrasted: hsla(104deg, 96%, 26%, 1);
+  --ods-color-green-100-contrasted-list: 104deg, 96%, 26%;
+  --ods-color-green-300-contrasted: hsla(104deg, 96%, 26%, 1);
+  --ods-color-green-300-contrasted-list: 104deg, 96%, 26%;
+  --ods-color-green-400-contrasted: hsla(104deg, 96%, 26%, 1);
+  --ods-color-green-400-contrasted-list: 104deg, 96%, 26%;
+  --ods-color-green-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-green-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-pink-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-pink-000-list: 0deg, 0%, 100%;
+  --ods-color-pink-100: hsla(316deg, 100%, 96%, 1);
+  --ods-color-pink-100-list: 316deg, 100%, 96%;
+  --ods-color-pink-300: hsla(316deg, 100%, 91%, 1);
+  --ods-color-pink-300-list: 316deg, 100%, 91%;
+  --ods-color-pink-500: hsla(327deg, 65%, 41%, 1);
+  --ods-color-pink-500-list: 327deg, 65%, 41%;
+  --ods-color-pink-700: hsla(328deg, 100%, 23%, 1);
+  --ods-color-pink-700-list: 328deg, 100%, 23%;
+  --ods-color-pink-900: hsla(328deg, 100%, 13%, 1);
+  --ods-color-pink-900-list: 328deg, 100%, 13%;
+  --ods-color-pink-000-contrasted: hsla(327deg, 65%, 41%, 1);
+  --ods-color-pink-000-contrasted-list: 327deg, 65%, 41%;
+  --ods-color-pink-100-contrasted: hsla(327deg, 65%, 41%, 1);
+  --ods-color-pink-100-contrasted-list: 327deg, 65%, 41%;
+  --ods-color-pink-300-contrasted: hsla(327deg, 65%, 41%, 1);
+  --ods-color-pink-300-contrasted-list: 327deg, 65%, 41%;
+  --ods-color-pink-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-pink-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-pink-700-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-pink-700-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-pink-900-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-pink-900-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-default-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-default-000-list: 0deg, 0%, 100%;
+  --ods-color-default-000-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-default-000-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-default-050: hsla(0deg, 0%, 95%, 1);
+  --ods-color-default-050-list: 0deg, 0%, 95%;
+  --ods-color-default-050-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-default-050-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-default-100: hsla(0deg, 0%, 90%, 1);
+  --ods-color-default-100-list: 0deg, 0%, 90%;
+  --ods-color-default-100-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-default-100-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-default-200: hsla(0deg, 0%, 80%, 1);
+  --ods-color-default-200-list: 0deg, 0%, 80%;
+  --ods-color-default-200-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-default-200-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-default-300: hsla(0deg, 0%, 70%, 1);
+  --ods-color-default-300-list: 0deg, 0%, 70%;
+  --ods-color-default-300-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-default-300-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-default-400: hsla(0deg, 0%, 60%, 1);
+  --ods-color-default-400-list: 0deg, 0%, 60%;
+  --ods-color-default-400-contrasted: hsla(0deg, 0%, 0%, 1);
+  --ods-color-default-400-contrasted-list: 0deg, 0%, 0%;
+  --ods-color-default-500: hsla(0deg, 0%, 50%, 1);
+  --ods-color-default-500-list: 0deg, 0%, 50%;
+  --ods-color-default-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-default-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-default-600: hsla(0deg, 0%, 40%, 1);
+  --ods-color-default-600-list: 0deg, 0%, 40%;
+  --ods-color-default-600-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-default-600-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-default-700: hsla(0deg, 0%, 30%, 1);
+  --ods-color-default-700-list: 0deg, 0%, 30%;
+  --ods-color-default-700-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-default-700-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-default-800: hsla(0deg, 0%, 20%, 1);
+  --ods-color-default-800-list: 0deg, 0%, 20%;
+  --ods-color-default-800-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-default-800-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-default-900: hsla(0deg, 0%, 10%, 1);
+  --ods-color-default-900-list: 0deg, 0%, 10%;
+  --ods-color-default-900-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-default-900-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-primary-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-primary-000-list: 0deg, 0%, 100%;
+  --ods-color-primary-000-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-primary-000-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-primary-050: hsla(186deg, 100%, 98%, 1);
+  --ods-color-primary-050-list: 186deg, 100%, 98%;
+  --ods-color-primary-050-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-primary-050-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-primary-075: hsla(193deg, 100%, 94%, 1);
+  --ods-color-primary-075-list: 193deg, 100%, 94%;
+  --ods-color-primary-075-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-primary-075-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-primary-100: hsla(193deg, 100%, 87%, 1);
+  --ods-color-primary-100-list: 193deg, 100%, 87%;
+  --ods-color-primary-100-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-primary-100-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-primary-200: hsla(198deg, 97%, 76%, 1);
+  --ods-color-primary-200-list: 198deg, 97%, 76%;
+  --ods-color-primary-200-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-primary-200-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-primary-300: hsla(204deg, 90%, 63%, 1);
+  --ods-color-primary-300-list: 204deg, 90%, 63%;
+  --ods-color-primary-300-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-primary-300-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-primary-400: hsla(210deg, 84%, 50%, 1);
+  --ods-color-primary-400-list: 210deg, 84%, 50%;
+  --ods-color-primary-400-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-primary-400-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-primary-500: hsla(218deg, 100%, 42%, 1);
+  --ods-color-primary-500-list: 218deg, 100%, 42%;
+  --ods-color-primary-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-primary-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-primary-600: hsla(226deg, 100%, 37%, 1);
+  --ods-color-primary-600-list: 226deg, 100%, 37%;
+  --ods-color-primary-600-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-primary-600-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-primary-700: hsla(235deg, 100%, 31%, 1);
+  --ods-color-primary-700-list: 235deg, 100%, 31%;
+  --ods-color-primary-700-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-primary-700-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-primary-800: hsla(225deg, 100%, 18%, 1);
+  --ods-color-primary-800-list: 225deg, 100%, 18%;
+  --ods-color-primary-800-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-primary-800-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-primary-900: hsla(215deg, 100%, 6%, 1);
+  --ods-color-primary-900-list: 215deg, 100%, 6%;
+  --ods-color-primary-900-contrasted: hsla(225deg, 100%, 18%, 1);
+  --ods-color-primary-900-contrasted-list: 225deg, 100%, 18%;
+  --ods-color-text-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-text-000-list: 0deg, 0%, 100%;
+  --ods-color-text-000-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-text-000-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-text-100: hsla(234deg, 13%, 85%, 1);
+  --ods-color-text-100-list: 234deg, 13%, 85%;
+  --ods-color-text-100-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-text-100-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-text-500: hsla(233deg, 31%, 44%, 1);
+  --ods-color-text-500-list: 233deg, 31%, 44%;
+  --ods-color-text-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-text-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-accent-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-accent-000-list: 0deg, 0%, 100%;
+  --ods-color-accent-000-contrasted: hsla(327deg, 65%, 41%, 1);
+  --ods-color-accent-000-contrasted-list: 327deg, 65%, 41%;
+  --ods-color-accent-100: hsla(316deg, 100%, 96%, 1);
+  --ods-color-accent-100-list: 316deg, 100%, 96%;
+  --ods-color-accent-100-contrasted: hsla(327deg, 65%, 41%, 1);
+  --ods-color-accent-100-contrasted-list: 327deg, 65%, 41%;
+  --ods-color-accent-300: hsla(316deg, 100%, 91%, 1);
+  --ods-color-accent-300-list: 316deg, 100%, 91%;
+  --ods-color-accent-300-contrasted: hsla(327deg, 65%, 41%, 1);
+  --ods-color-accent-300-contrasted-list: 327deg, 65%, 41%;
+  --ods-color-accent-500: hsla(327deg, 65%, 41%, 1);
+  --ods-color-accent-500-list: 327deg, 65%, 41%;
+  --ods-color-accent-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-accent-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-accent-700: hsla(328deg, 100%, 23%, 1);
+  --ods-color-accent-700-list: 328deg, 100%, 23%;
+  --ods-color-accent-700-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-accent-700-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-accent-900: hsla(328deg, 100%, 13%, 1);
+  --ods-color-accent-900-list: 328deg, 100%, 13%;
+  --ods-color-accent-900-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-accent-900-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-error-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-error-000-list: 0deg, 0%, 100%;
+  --ods-color-error-000-contrasted: hsla(0deg, 75%, 43%, 1);
+  --ods-color-error-000-contrasted-list: 0deg, 75%, 43%;
+  --ods-color-error-100: hsla(344deg, 100%, 95%, 1);
+  --ods-color-error-100-list: 344deg, 100%, 95%;
+  --ods-color-error-100-contrasted: hsla(0deg, 75%, 43%, 1);
+  --ods-color-error-100-contrasted-list: 0deg, 75%, 43%;
+  --ods-color-error-300: hsla(345deg, 100%, 91%, 1);
+  --ods-color-error-300-list: 345deg, 100%, 91%;
+  --ods-color-error-300-contrasted: hsla(0deg, 75%, 43%, 1);
+  --ods-color-error-300-contrasted-list: 0deg, 75%, 43%;
+  --ods-color-error-400: hsla(357deg, 63%, 67%, 1);
+  --ods-color-error-400-list: 357deg, 63%, 67%;
+  --ods-color-error-400-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-error-400-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-error-500: hsla(0deg, 75%, 43%, 1);
+  --ods-color-error-500-list: 0deg, 75%, 43%;
+  --ods-color-error-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-error-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-warning-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-warning-000-list: 0deg, 0%, 100%;
+  --ods-color-warning-000-contrasted: hsla(20deg, 88%, 32%, 1);
+  --ods-color-warning-000-contrasted-list: 20deg, 88%, 32%;
+  --ods-color-warning-100: hsla(50deg, 97%, 88%, 1);
+  --ods-color-warning-100-list: 50deg, 97%, 88%;
+  --ods-color-warning-100-contrasted: hsla(20deg, 88%, 32%, 1);
+  --ods-color-warning-100-contrasted-list: 20deg, 88%, 32%;
+  --ods-color-warning-300: hsla(50deg, 98%, 76%, 1);
+  --ods-color-warning-300-list: 50deg, 98%, 76%;
+  --ods-color-warning-300-contrasted: hsla(20deg, 88%, 32%, 1);
+  --ods-color-warning-300-contrasted-list: 20deg, 88%, 32%;
+  --ods-color-warning-400: hsla(30deg, 95%, 61%, 1);
+  --ods-color-warning-400-list: 30deg, 95%, 61%;
+  --ods-color-warning-400-contrasted: hsla(20deg, 88%, 32%, 1);
+  --ods-color-warning-400-contrasted-list: 20deg, 88%, 32%;
+  --ods-color-warning-500: hsla(20deg, 88%, 32%, 1);
+  --ods-color-warning-500-list: 20deg, 88%, 32%;
+  --ods-color-warning-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-warning-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-success-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-success-000-list: 0deg, 0%, 100%;
+  --ods-color-success-000-contrasted: hsla(104deg, 96%, 26%, 1);
+  --ods-color-success-000-contrasted-list: 104deg, 96%, 26%;
+  --ods-color-success-100: hsla(84deg, 66%, 92%, 1);
+  --ods-color-success-100-list: 84deg, 66%, 92%;
+  --ods-color-success-100-contrasted: hsla(104deg, 96%, 26%, 1);
+  --ods-color-success-100-contrasted-list: 104deg, 96%, 26%;
+  --ods-color-success-300: hsla(85deg, 68%, 84%, 1);
+  --ods-color-success-300-list: 85deg, 68%, 84%;
+  --ods-color-success-300-contrasted: hsla(104deg, 96%, 26%, 1);
+  --ods-color-success-300-contrasted-list: 104deg, 96%, 26%;
+  --ods-color-success-400: hsla(99deg, 42%, 58%, 1);
+  --ods-color-success-400-list: 99deg, 42%, 58%;
+  --ods-color-success-400-contrasted: hsla(104deg, 96%, 26%, 1);
+  --ods-color-success-400-contrasted-list: 104deg, 96%, 26%;
+  --ods-color-success-500: hsla(104deg, 96%, 26%, 1);
+  --ods-color-success-500-list: 104deg, 96%, 26%;
+  --ods-color-success-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-success-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-info-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-info-000-list: 0deg, 0%, 100%;
+  --ods-color-info-000-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-info-000-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-info-050: hsla(186deg, 100%, 98%, 1);
+  --ods-color-info-050-list: 186deg, 100%, 98%;
+  --ods-color-info-050-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-info-050-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-info-075: hsla(193deg, 100%, 94%, 1);
+  --ods-color-info-075-list: 193deg, 100%, 94%;
+  --ods-color-info-075-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-info-075-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-info-100: hsla(193deg, 100%, 87%, 1);
+  --ods-color-info-100-list: 193deg, 100%, 87%;
+  --ods-color-info-100-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-info-100-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-info-200: hsla(198deg, 97%, 76%, 1);
+  --ods-color-info-200-list: 198deg, 97%, 76%;
+  --ods-color-info-200-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-info-200-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-info-300: hsla(204deg, 90%, 63%, 1);
+  --ods-color-info-300-list: 204deg, 90%, 63%;
+  --ods-color-info-300-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-info-300-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-info-400: hsla(210deg, 84%, 50%, 1);
+  --ods-color-info-400-list: 210deg, 84%, 50%;
+  --ods-color-info-400-contrasted: hsla(218deg, 100%, 42%, 1);
+  --ods-color-info-400-contrasted-list: 218deg, 100%, 42%;
+  --ods-color-info-500: hsla(218deg, 100%, 42%, 1);
+  --ods-color-info-500-list: 218deg, 100%, 42%;
+  --ods-color-info-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-info-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-info-600: hsla(226deg, 100%, 37%, 1);
+  --ods-color-info-600-list: 226deg, 100%, 37%;
+  --ods-color-info-600-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-info-600-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-info-700: hsla(235deg, 100%, 31%, 1);
+  --ods-color-info-700-list: 235deg, 100%, 31%;
+  --ods-color-info-700-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-info-700-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-info-800: hsla(225deg, 100%, 18%, 1);
+  --ods-color-info-800-list: 225deg, 100%, 18%;
+  --ods-color-info-800-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-info-800-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-info-900: hsla(215deg, 100%, 6%, 1);
+  --ods-color-info-900-list: 215deg, 100%, 6%;
+  --ods-color-info-900-contrasted: hsla(225deg, 100%, 18%, 1);
+  --ods-color-info-900-contrasted-list: 225deg, 100%, 18%;
+  --ods-color-promotion-000: hsla(0deg, 0%, 100%, 1);
+  --ods-color-promotion-000-list: 0deg, 0%, 100%;
+  --ods-color-promotion-000-contrasted: hsla(327deg, 65%, 41%, 1);
+  --ods-color-promotion-000-contrasted-list: 327deg, 65%, 41%;
+  --ods-color-promotion-100: hsla(316deg, 100%, 96%, 1);
+  --ods-color-promotion-100-list: 316deg, 100%, 96%;
+  --ods-color-promotion-100-contrasted: hsla(327deg, 65%, 41%, 1);
+  --ods-color-promotion-100-contrasted-list: 327deg, 65%, 41%;
+  --ods-color-promotion-300: hsla(316deg, 100%, 91%, 1);
+  --ods-color-promotion-300-list: 316deg, 100%, 91%;
+  --ods-color-promotion-300-contrasted: hsla(327deg, 65%, 41%, 1);
+  --ods-color-promotion-300-contrasted-list: 327deg, 65%, 41%;
+  --ods-color-promotion-500: hsla(327deg, 65%, 41%, 1);
+  --ods-color-promotion-500-list: 327deg, 65%, 41%;
+  --ods-color-promotion-500-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-promotion-500-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-promotion-700: hsla(328deg, 100%, 23%, 1);
+  --ods-color-promotion-700-list: 328deg, 100%, 23%;
+  --ods-color-promotion-700-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-promotion-700-contrasted-list: 0deg, 0%, 100%;
+  --ods-color-promotion-900: hsla(328deg, 100%, 13%, 1);
+  --ods-color-promotion-900-list: 328deg, 100%, 13%;
+  --ods-color-promotion-900-contrasted: hsla(0deg, 0%, 100%, 1);
+  --ods-color-promotion-900-contrasted-list: 0deg, 0%, 100%;
+  --ods-size-button-sm-height: 2.25rem;
+  --ods-size-button-sm-border-radius: var(--ods-size-border-radius-02);
+  --ods-size-button-sm-border-width: var(--ods-size-inset-02);
+  --ods-size-button-sm-padding-y: 0;
+  --ods-size-button-sm-padding-x: var(--ods-size-inline-05);
+  --ods-size-button-md-height: 3.25rem;
+  --ods-size-button-md-border-radius: var(--ods-size-border-radius-02);
+  --ods-size-button-md-border-width: var(--ods-size-inset-02);
+  --ods-size-button-md-padding-y: 0;
+  --ods-size-button-md-padding-x: var(--ods-size-inline-06);
+  --ods-size-cart-sm-container-padding: var(--ods-size-stack-03) 0;
+  --ods-size-cart-sm-container-mask-height: var(--ods-size-stack-06);
+  --ods-size-cart-sm-empty-padding: var(--ods-size-stack-06) 0;
+  --ods-size-cart-sm-header-margin-bottom: var(--ods-size-stack-03);
+  --ods-size-cart-sm-mobile-handle-border-radius: var(
+    --ods-size-border-radius-01
+  );
+  --ods-size-cart-sm-mobile-handle-height: var(--ods-size-stack-03);
+  --ods-size-cart-sm-mobile-handle-margin: var(--ods-size-inset-n-06);
+  --ods-size-cart-sm-mobile-handle-padding: var(--ods-size-inset-06);
+  --ods-size-cart-sm-mobile-handle-width: clamp(
+    calc(4rem * var(--ods-size-ratio)),
+    20vw,
+    calc(8rem * var(--ods-size-ratio))
+  );
+  --ods-size-cart-sm-padding: var(--ods-size-inset-06);
+  --ods-size-cart-sm-section-divider-padding: 0 var(--ods-size-inline-05);
+  --ods-size-cart-sm-section-margin: var(--ods-size-stack-04) 0;
+  --ods-size-cart-sm-section-padding: var(--ods-size-inset-05);
+  --ods-size-cart-sm-total-margin: var(--ods-size-stack-04)
+    var(--ods-size-inline-05);
+  --ods-size-chip-sm-border-radius: var(--ods-size-border-radius-03);
+  --ods-size-chip-sm-border-width: var(--ods-size-inset-01);
+  --ods-size-chip-sm-height: var(--ods-size-08);
+  --ods-size-chip-sm-icon-width: calc(0.875rem * var(--ods-size-ratio));
+  --ods-size-chip-sm-inline-margin: var(--ods-size-inline-03);
+  --ods-size-chip-sm-padding: 0 var(--ods-size-inset-04);
+  --ods-size-chip-md-border-radius: var(--ods-size-border-radius-03);
+  --ods-size-chip-md-border-width: var(--ods-size-inset-01);
+  --ods-size-chip-md-height: var(--ods-size-09);
+  --ods-size-chip-md-icon-width: calc(0.875rem * var(--ods-size-ratio));
+  --ods-size-chip-md-inline-margin: var(--ods-size-inline-03);
+  --ods-size-chip-md-padding: 0 var(--ods-size-inset-05);
+  --ods-size-divider-0-margin-y: 0;
+  --ods-size-divider-0-height: var(--ods-size-stack-02);
+  --ods-size-divider-1-margin-y: var(--ods-size-stack-02);
+  --ods-size-divider-1-height: var(--ods-size-stack-02);
+  --ods-size-divider-2-margin-y: var(--ods-size-stack-03);
+  --ods-size-divider-2-height: var(--ods-size-stack-02);
+  --ods-size-divider-3-margin-y: var(--ods-size-stack-04);
+  --ods-size-divider-3-height: var(--ods-size-stack-02);
+  --ods-size-divider-4-margin-y: var(--ods-size-stack-05);
+  --ods-size-divider-4-height: var(--ods-size-stack-02);
+  --ods-size-divider-5-margin-y: var(--ods-size-stack-06);
+  --ods-size-divider-5-height: var(--ods-size-stack-02);
+  --ods-size-divider-6-margin-y: var(--ods-size-stack-07);
+  --ods-size-divider-6-height: var(--ods-size-stack-02);
+  --ods-size-divider-7-margin-y: var(--ods-size-stack-08);
+  --ods-size-divider-7-height: var(--ods-size-stack-02);
+  --ods-size-divider-8-margin-y: var(--ods-size-stack-09);
+  --ods-size-divider-8-height: var(--ods-size-stack-02);
+  --ods-size-divider-9-margin-y: var(--ods-size-stack-10);
+  --ods-size-divider-9-height: var(--ods-size-stack-02);
+  --ods-size-divider-10-margin-y: var(--ods-size-stack-11);
+  --ods-size-divider-10-height: var(--ods-size-stack-02);
+  --ods-size-icon-xxs-width: var(--ods-size-06);
+  --ods-size-icon-xxs-height: var(--ods-size-06);
+  --ods-size-icon-xs-width: var(--ods-size-07);
+  --ods-size-icon-xs-height: var(--ods-size-07);
+  --ods-size-icon-sm-width: var(--ods-size-08);
+  --ods-size-icon-sm-height: var(--ods-size-08);
+  --ods-size-icon-md-width: var(--ods-size-09);
+  --ods-size-icon-md-height: var(--ods-size-09);
+  --ods-size-icon-lg-width: var(--ods-size-10);
+  --ods-size-icon-lg-height: var(--ods-size-10);
+  --ods-size-icon-xl-width: var(--ods-size-11);
+  --ods-size-icon-xl-height: var(--ods-size-11);
+  --ods-size-input-md-height: calc(2.25rem * var(--ods-size-ratio));
+  --ods-size-input-md-border-width: var(--ods-size-inset-01);
+  --ods-size-input-md-border-radius: var(--ods-size-border-radius-01);
+  --ods-size-input-md-icon-width: var(--ods-size-06);
+  --ods-size-input-md-padding: 0 var(--ods-size-inline-04);
+  --ods-size-range-md-outline-width: var(--ods-size-03);
+  --ods-size-range-md-outline-offset: var(--ods-size-03);
+  --ods-size-range-md-bar-height: var(--ods-size-04);
+  --ods-size-range-md-bar-radius: var(--ods-size-03);
+  --ods-size-range-md-thumb-size: var(--ods-size-06);
+  --ods-size-range-md-thumb-border: var(--ods-size-02);
+  --ods-size-tile-sm-padding: var(--ods-size-inset-05);
+  --ods-size-tile-md-padding: var(--ods-size-inset-06);
+  --ods-typography-heading-100-font-family: var(--ods-font-family);
+  --ods-typography-heading-100-font-size: var(--ods-typo-size-03);
+  --ods-typography-heading-100-line-height: var(--ods-line-height-size-03);
+  --ods-typography-heading-100-font-style: normal;
+  --ods-typography-heading-100-letter-spacing: var(
+    --ods-letter-spacing-size-02
+  );
+  --ods-typography-heading-100-font-weight: var(--ods-typo-weight-semibold);
+  --ods-typography-heading-200-font-family: var(--ods-font-family);
+  --ods-typography-heading-200-font-size: var(--ods-typo-size-03);
+  --ods-typography-heading-200-line-height: var(--ods-line-height-size-04);
+  --ods-typography-heading-200-font-style: normal;
+  --ods-typography-heading-200-letter-spacing: var(
+    --ods-letter-spacing-size-02
+  );
+  --ods-typography-heading-200-font-weight: var(--ods-typo-weight-bold);
+  --ods-typography-heading-300-font-family: var(--ods-font-family);
+  --ods-typography-heading-300-font-size: var(--ods-typo-size-04);
+  --ods-typography-heading-300-line-height: var(--ods-line-height-size-04);
+  --ods-typography-heading-300-font-style: normal;
+  --ods-typography-heading-300-letter-spacing: var(
+    --ods-letter-spacing-size-02
+  );
+  --ods-typography-heading-300-font-weight: var(--ods-typo-weight-bold);
+  --ods-typography-heading-400-font-family: var(--ods-font-family);
+  --ods-typography-heading-400-font-size: var(--ods-typo-size-05);
+  --ods-typography-heading-400-line-height: var(--ods-line-height-size-05);
+  --ods-typography-heading-400-font-style: normal;
+  --ods-typography-heading-400-letter-spacing: var(
+    --ods-letter-spacing-size-02
+  );
+  --ods-typography-heading-400-font-weight: var(--ods-typo-weight-bold);
+  --ods-typography-heading-500-font-family: var(--ods-font-family);
+  --ods-typography-heading-500-font-size: var(--ods-typo-size-06);
+  --ods-typography-heading-500-line-height: var(--ods-line-height-size-06);
+  --ods-typography-heading-500-font-style: normal;
+  --ods-typography-heading-500-letter-spacing: var(
+    --ods-letter-spacing-size-02
+  );
+  --ods-typography-heading-500-font-weight: var(--ods-typo-weight-bold);
+  --ods-typography-heading-600-font-family: var(--ods-font-family);
+  --ods-typography-heading-600-font-size: var(--ods-typo-size-07);
+  --ods-typography-heading-600-line-height: var(--ods-line-height-size-07);
+  --ods-typography-heading-600-font-style: normal;
+  --ods-typography-heading-600-letter-spacing: var(
+    --ods-letter-spacing-size-02
+  );
+  --ods-typography-heading-600-font-weight: var(--ods-typo-weight-bold);
+  --ods-typography-heading-700-font-family: var(--ods-font-family);
+  --ods-typography-heading-700-font-size: var(--ods-typo-size-08);
+  --ods-typography-heading-700-line-height: var(--ods-line-height-size-08);
+  --ods-typography-heading-700-font-style: normal;
+  --ods-typography-heading-700-letter-spacing: var(
+    --ods-letter-spacing-size-02
+  );
+  --ods-typography-heading-700-font-weight: var(--ods-typo-weight-bold);
+  --ods-typography-heading-800-font-family: var(--ods-font-family);
+  --ods-typography-heading-800-font-size: var(--ods-typo-size-09);
+  --ods-typography-heading-800-line-height: var(--ods-line-height-size-09);
+  --ods-typography-heading-800-font-style: normal;
+  --ods-typography-heading-800-letter-spacing: var(
+    --ods-letter-spacing-size-02
+  );
+  --ods-typography-heading-800-font-weight: var(--ods-typo-weight-bold);
+  --ods-typography-subheading-100-font-family: var(--ods-font-family);
+  --ods-typography-subheading-100-font-size: var(--ods-typo-size-03);
+  --ods-typography-subheading-100-line-height: var(--ods-line-height-size-03);
+  --ods-typography-subheading-100-font-style: normal;
+  --ods-typography-subheading-100-letter-spacing: var(
+    --ods-letter-spacing-size-02
+  );
+  --ods-typography-subheading-100-font-weight: var(--ods-typo-weight-semibold);
+  --ods-typography-subheading-200-font-family: var(--ods-font-family);
+  --ods-typography-subheading-200-font-size: var(--ods-typo-size-05);
+  --ods-typography-subheading-200-line-height: var(--ods-line-height-size-05);
+  --ods-typography-subheading-200-font-style: normal;
+  --ods-typography-subheading-200-letter-spacing: var(
+    --ods-letter-spacing-size-02
+  );
+  --ods-typography-subheading-200-font-weight: var(--ods-typo-weight-bold);
+  --ods-typography-body-100-font-family: var(--ods-font-family);
+  --ods-typography-body-100-font-size: var(--ods-typo-size-02);
+  --ods-typography-body-100-line-height: var(--ods-line-height-size-02);
+  --ods-typography-body-100-font-style: normal;
+  --ods-typography-body-100-letter-spacing: var(--ods-letter-spacing-size-02);
+  --ods-typography-body-100-font-weight: var(--ods-typo-weight-regular);
+  --ods-typography-body-200-font-family: var(--ods-font-family);
+  --ods-typography-body-200-font-size: var(--ods-typo-size-02);
+  --ods-typography-body-200-line-height: var(--ods-line-height-size-02);
+  --ods-typography-body-200-font-style: normal;
+  --ods-typography-body-200-letter-spacing: var(--ods-letter-spacing-size-02);
+  --ods-typography-body-200-font-weight: var(--ods-typo-weight-semibold);
+  --ods-typography-body-300-font-family: var(--ods-font-family);
+  --ods-typography-body-300-font-size: var(--ods-typo-size-03);
+  --ods-typography-body-300-line-height: var(--ods-line-height-size-03);
+  --ods-typography-body-300-font-style: italic;
+  --ods-typography-body-300-letter-spacing: var(--ods-letter-spacing-size-02);
+  --ods-typography-body-300-font-weight: var(--ods-typo-weight-regular);
+  --ods-typography-body-400-font-family: var(--ods-font-family);
+  --ods-typography-body-400-font-size: var(--ods-typo-size-03);
+  --ods-typography-body-400-line-height: var(--ods-line-height-size-03);
+  --ods-typography-body-400-font-style: normal;
+  --ods-typography-body-400-letter-spacing: var(--ods-letter-spacing-size-02);
+  --ods-typography-body-400-font-weight: var(--ods-typo-weight-regular);
+  --ods-typography-body-500-font-family: var(--ods-font-family);
+  --ods-typography-body-500-font-size: var(--ods-typo-size-03);
+  --ods-typography-body-500-line-height: var(--ods-line-height-size-03);
+  --ods-typography-body-500-font-style: normal;
+  --ods-typography-body-500-letter-spacing: var(--ods-letter-spacing-size-02);
+  --ods-typography-body-500-font-weight: var(--ods-typo-weight-semibold);
+  --ods-typography-body-600-font-family: var(--ods-font-family);
+  --ods-typography-body-600-font-size: var(--ods-typo-size-04);
+  --ods-typography-body-600-line-height: var(--ods-line-height-size-04);
+  --ods-typography-body-600-font-style: normal;
+  --ods-typography-body-600-letter-spacing: var(--ods-letter-spacing-size-02);
+  --ods-typography-body-600-font-weight: var(--ods-typo-weight-regular);
+  --ods-typography-button-100-font-family: var(--ods-font-family);
+  --ods-typography-button-100-font-size: var(--ods-typo-size-03);
+  --ods-typography-button-100-line-height: var(--ods-line-height-size-03);
+  --ods-typography-button-100-font-style: normal;
+  --ods-typography-button-100-letter-spacing: var(--ods-letter-spacing-size-02);
+  --ods-typography-button-100-font-weight: var(--ods-typo-weight-semibold);
+  --ods-typography-caption-100-font-family: var(--ods-font-family);
+  --ods-typography-caption-100-font-size: var(--ods-typo-size-01);
+  --ods-typography-caption-100-line-height: var(--ods-line-height-size-01);
+  --ods-typography-caption-100-font-style: normal;
+  --ods-typography-caption-100-letter-spacing: var(
+    --ods-letter-spacing-size-01
+  );
+  --ods-typography-caption-100-font-weight: var(--ods-typo-weight-regular);
+}
+
+:root {
+  --xs: 0;
+  --sm: 320px;
+  --md: 768px;
+  --lg: 1120px;
+  --xl: 1600px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul ul {
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+a:not([href]):not([class]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+button {
+  border-radius: 0;
+}
+
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+[type=button],
+button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.position-fixed {
+  position: fixed !important;
+}
+
+.position-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+@media (min-width: 320px) {
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+  .container {
+    max-width: 728px;
+  }
+}
+@media (min-width: 1120px) {
+  .container {
+    max-width: 1088px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.col,
+.col-12,
+.col-lg-9,
+.col-md-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.order-0 {
+  order: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .order-md-0 {
+    order: 0;
+  }
+  .order-md-1 {
+    order: 1;
+  }
+}
+.d-none {
+  display: none !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+@media (min-width: 1120px) {
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-lg-inline-block {
+    display: inline-block !important;
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+  .d-lg-flex {
+    display: flex !important;
+  }
+}
+.flex-column {
+  flex-direction: column !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+.flex-grow-0 {
+  flex-grow: 0 !important;
+}
+
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-1 {
+  margin-top: 0.125rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.125rem !important;
+}
+
+.mr-2 {
+  margin-right: 0.25rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.25rem !important;
+}
+
+.mt-3 {
+  margin-top: 0.5rem !important;
+}
+
+.mr-3 {
+  margin-right: 0.5rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 0.5rem !important;
+}
+
+.ml-3 {
+  margin-left: 0.5rem !important;
+}
+
+.mx-4 {
+  margin-right: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.mx-4 {
+  margin-left: 1rem !important;
+}
+
+.mt-7 {
+  margin-top: 2.5rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 2.5rem !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.px-0 {
+  padding-right: 0 !important;
+}
+
+.px-0 {
+  padding-left: 0 !important;
+}
+
+.py-1 {
+  padding-top: 0.125rem !important;
+}
+
+.py-1 {
+  padding-bottom: 0.125rem !important;
+}
+
+.px-2 {
+  padding-right: 0.25rem !important;
+}
+
+.px-2 {
+  padding-left: 0.25rem !important;
+}
+
+.pt-3,
+.py-3 {
+  padding-top: 0.5rem !important;
+}
+
+.pr-3,
+.px-3 {
+  padding-right: 0.5rem !important;
+}
+
+.pb-3,
+.py-3 {
+  padding-bottom: 0.5rem !important;
+}
+
+.px-3 {
+  padding-left: 0.5rem !important;
+}
+
+.p-4 {
+  padding: 1rem !important;
+}
+
+.pt-4,
+.py-4 {
+  padding-top: 1rem !important;
+}
+
+.px-4 {
+  padding-right: 1rem !important;
+}
+
+.pb-4,
+.py-4 {
+  padding-bottom: 1rem !important;
+}
+
+.px-4 {
+  padding-left: 1rem !important;
+}
+
+.pt-6 {
+  padding-top: 2rem !important;
+}
+
+.px-6 {
+  padding-right: 2rem !important;
+}
+
+.px-6 {
+  padding-left: 2rem !important;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+}
+
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+
+@media (min-width: 1120px) {
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+  .flex-lg-wrap {
+    flex-wrap: wrap !important;
+  }
+  .flex-lg-grow-0 {
+    flex-grow: 0 !important;
+  }
+  .flex-lg-grow-1 {
+    flex-grow: 1 !important;
+  }
+  .justify-content-lg-between {
+    justify-content: space-between !important;
+  }
+  .align-items-lg-center {
+    align-items: center !important;
+  }
+  .align-items-lg-stretch {
+    align-items: stretch !important;
+  }
+  .mt-lg-0 {
+    margin-top: 0 !important;
+  }
+  .mb-lg-0 {
+    margin-bottom: 0 !important;
+  }
+  .mb-lg-2 {
+    margin-bottom: 0.25rem !important;
+  }
+  .mb-lg-3 {
+    margin-bottom: 0.5rem !important;
+  }
+  .p-lg-0 {
+    padding: 0 !important;
+  }
+  .pt-lg-0,
+  .py-lg-0 {
+    padding-top: 0 !important;
+  }
+  .px-lg-0 {
+    padding-right: 0 !important;
+  }
+  .py-lg-0 {
+    padding-bottom: 0 !important;
+  }
+  .px-lg-0 {
+    padding-left: 0 !important;
+  }
+  .pt-lg-2,
+  .py-lg-2 {
+    padding-top: 0.25rem !important;
+  }
+  .px-lg-2 {
+    padding-right: 0.25rem !important;
+  }
+  .py-lg-2 {
+    padding-bottom: 0.25rem !important;
+  }
+  .px-lg-2 {
+    padding-left: 0.25rem !important;
+  }
+  .p-lg-3 {
+    padding: 0.5rem !important;
+  }
+  .pt-lg-3,
+  .py-lg-3 {
+    padding-top: 0.5rem !important;
+  }
+  .px-lg-3 {
+    padding-right: 0.5rem !important;
+  }
+  .pb-lg-3,
+  .py-lg-3 {
+    padding-bottom: 0.5rem !important;
+  }
+  .px-lg-3 {
+    padding-left: 0.5rem !important;
+  }
+  .p-lg-4 {
+    padding: 1rem !important;
+  }
+  .py-lg-4 {
+    padding-top: 1rem !important;
+  }
+  .px-lg-4 {
+    padding-right: 1rem !important;
+  }
+  .pb-lg-4,
+  .py-lg-4 {
+    padding-bottom: 1rem !important;
+  }
+  .px-lg-4 {
+    padding-left: 1rem !important;
+  }
+  .pt-lg-5 {
+    padding-top: 1.5rem !important;
+  }
+  .px-lg-5 {
+    padding-right: 1.5rem !important;
+  }
+  .pb-lg-5 {
+    padding-bottom: 1.5rem !important;
+  }
+  .px-lg-5 {
+    padding-left: 1.5rem !important;
+  }
+  .pr-lg-6 {
+    padding-right: 2rem !important;
+  }
+  .pb-lg-6 {
+    padding-bottom: 2rem !important;
+  }
+  .ml-lg-auto {
+    margin-left: auto !important;
+  }
+}
+[class*=icon--] {
+  font-family: icons !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+}
+
+.icon--arrow-right::after {
+  content: "\f103";
+}
+
+.icon--back-to-top::after {
+  content: "\f104";
+}
+
+.icon--bell::after {
+  content: "\f105";
+}
+
+.icon--close::after {
+  content: "\f110";
+}
+
+.icon--ods-home::after {
+  content: "\f127";
+}
+
+.icon--person-happy::after {
+  content: "\f12c";
+}
+
+.icon--search::after {
+  content: "\f133";
+}
+
+.icon--user::after {
+  content: "\f13b";
+}
+
+.text-level--xs {
+  color: inherit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .mt-md-0 {
+    margin-top: 0 !important;
+  }
+  .text-level--xs {
+    font-size: 0.75rem;
+  }
+  .text-level--sm {
+    font-size: 0.875rem;
+  }
+}
+.text-level--sm {
+  color: inherit;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.bg--dark .text-level--sm {
+  color: #fff;
+}
+
+.text-level--md {
+  color: #00185e;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
+@media (min-width: 768px) {
+  .text-level--md {
+    font-size: 1.125rem;
+  }
+  .text-level--lg {
+    font-size: 1.25rem;
+  }
+}
+.bg--dark .text-level--md {
+  color: #fff;
+}
+
+.text-level--lg {
+  color: #00185e;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
+.bg--dark .text-level--lg {
+  color: #fff;
+}
+
+.text-level--xxl {
+  color: #00185e;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
+@media (min-width: 768px) {
+  .text-level--xxl {
+    font-size: 2.25rem;
+  }
+  .layout-container {
+    font-size: 1rem;
+  }
+}
+.bg--dark .text-level--xxl {
+  color: #fff;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+.layout-container {
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #4d5592;
+}
+
+.layout-container strong {
+  font-weight: 700;
+}
+
+.layout-container img {
+  height: auto;
+  max-width: 100%;
+}
+
+.layout-container p {
+  margin-bottom: 1rem;
+}
+
+.layout-container p:last-child {
+  margin-bottom: 0;
+}
+
+.layout-container h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.layout-container h2 {
+  padding: 0;
+  margin: 0;
+}
+
+a:not([class]) {
+  font-weight: 600;
+  padding: 0;
+  color: #0050d7;
+  text-decoration: none;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.bg--dark {
+  color: #fff;
+}
+
+.ods-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 14, 156, 0.75);
+  z-index: 3;
+}
+
+.ods-overlay.inactive {
+  display: none;
+}
+
+.ods-badge {
+  white-space: nowrap;
+  border-radius: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  display: inline;
+  --badge-custom-color: #000e9c;
+}
+
+.ods-badge--default {
+  color: #f5feff;
+  background-color: #000e9c;
+}
+
+.ods-badge--new {
+  color: #fff;
+  background-color: #008686;
+}
+
+.oui-back-to-top {
+  height: 54px;
+  height: 3.375rem;
+  width: 54px;
+  width: 3.375rem;
+  border: none;
+  padding: 0;
+  z-index: 300;
+  right: 0.5rem;
+  bottom: 5rem;
+  visibility: hidden;
+  opacity: 0;
+  outline: 0;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: rgba(0, 13, 31, 0.25) 0 0 0.25rem 0;
+}
+
+.oui-back-to-top__icon {
+  font-size: 2rem;
+  color: #0050d7;
+}
+
+@media (min-width: 768px) {
+  .oui-back-to-top {
+    right: 1.5rem;
+  }
+}
+.oui-cta {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.75rem 0.9375rem;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.25em;
+  border-radius: 0.5rem;
+  box-shadow: none;
+}
+
+.oui-cta--primary {
+  color: #fff;
+  border: 0.125rem solid #0050d7;
+  font-size: 1.125rem;
+  background-color: #0050d7;
+}
+
+.bg--dark .oui-cta--primary:not(.forced-color) {
+  color: #0050d7;
+}
+
+.bg--dark .oui-cta--primary:not(.forced-color) {
+  background-color: #fff;
+  border: 0.125rem solid #fff;
+}
+
+.oui-cta--link {
+  color: #0050d7;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.oui-cta--small {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.oui-cta--icon:after {
+  font-family: icons !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  content: "\f103";
+  font-size: inherit;
+  color: inherit;
+}
+
+.oui-cta--icon::after {
+  margin-left: 0.25rem;
+}
+
+.oui-cta--icon::after,
+.oui-cta--icon::before {
+  text-decoration: none;
+}
+
+.oui-icon-svg--rounded {
+  background: rgba(133, 217, 253, 0.15);
+  border-radius: 50%;
+}
+
+.oui-icon-svg--large.oui-icon-svg--rounded {
+  width: 80px;
+  width: 5rem;
+  height: 80px;
+  height: 5rem;
+}
+
+:not(.no-fill) > .oui-icon-svg svg [fill*="#"] {
+  fill: #00185e;
+}
+
+.bg--dark :not(.no-fill) > .oui-icon-svg svg [fill*="#"] {
+  fill: #fff;
+}
+
+.ods-breadcrumb {
+  list-style-type: none;
+  color: #4d5592;
+  line-height: 1.25em;
+}
+
+.ods-breadcrumb__item {
+  border-left: 1px solid #0050d7;
+  line-height: 1em;
+}
+
+.ods-breadcrumb__item__link {
+  z-index: 1;
+  text-decoration: none;
+  color: #0050d7;
+}
+
+.ods-breadcrumb__item__link--home::before {
+  content: "";
+  display: block;
+  width: 220%;
+  height: 180%;
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  z-index: -1;
+  opacity: 0;
+  background-color: #85d9fd;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: scale(0) rotate(0);
+}
+
+.bg--dark .ods-breadcrumb__item__link--home {
+  color: #fff;
+}
+
+.ods-breadcrumb__item--home {
+  border-left: none;
+  font-size: 0.9em;
+}
+
+.bg--dark .ods-breadcrumb__item {
+  border-left-color: #bef1ff;
+}
+
+.bg--dark .ods-breadcrumb {
+  color: #fff;
+}
+
+.ods-language-switcher.language-switcher .language-switcher__btn {
+  background: 0 0;
+  border: none;
+  color: #fff;
+}
+
+.ods-language-switcher.language-switcher .language-switcher__wrapper [data-back-link] {
+  color: #fff;
+}
+
+.ods-language-switcher.language-switcher .language-switcher__wrapper__language-region {
+  color: #fff;
+  font-weight: 700;
+}
+
+.ods-language-switcher.language-switcher .language-switcher__wrapper::before {
+  right: 1.25rem;
+  left: auto;
+}
+
+.ods-language-switcher.language-switcher .language-switcher__wrapper::after {
+  display: none;
+}
+
+.ods-language-switcher.language-switcher .language-switcher-language-url {
+  padding: 0;
+}
+
+.ods-language-switcher.language-switcher .language-switcher-language-url li {
+  width: 100%;
+  display: inline-block;
+  padding-right: 0.25rem;
+}
+
+.ods-language-switcher.language-switcher .language-switcher-language-url li .language-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+}
+
+.ods-language-switcher.language-switcher .language-switcher-language-url li .language-link::after {
+  content: "";
+  border-top: 1px solid #002dbe;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  left: 1rem;
+}
+
+.ods-navbar__container {
+  max-width: 1280px;
+}
+
+@media (min-width: 1120px) {
+  .ods-language-switcher.language-switcher .language-switcher__btn {
+    background: 0 0;
+    border: none;
+    position: relative;
+  }
+  .ods-language-switcher.language-switcher .language-switcher__btn::after {
+    content: none;
+  }
+  .ods-language-switcher.language-switcher .language-switcher__wrapper__language-region {
+    color: #00185e;
+  }
+  .ods-language-switcher.language-switcher .language-switcher__wrapper {
+    max-width: 500px;
+    max-width: 31.25rem;
+    left: auto;
+    right: -1rem;
+    transform: translateX(0);
+  }
+  .ods-language-switcher.language-switcher .language-switcher-language-url:not(:last-child) {
+    border-bottom: 1px solid rgba(77, 85, 146, 0.5);
+  }
+  .ods-language-switcher.language-switcher .language-switcher-language-url li {
+    flex: 0 0 33.333%;
+  }
+  .ods-language-switcher.language-switcher .language-switcher-language-url li .language-link::after {
+    content: none;
+  }
+  .ods-language-switcher.language-switcher .language-switcher-language-url li .language-link {
+    color: #0050d7;
+    font-size: 0.75rem;
+    border-bottom: none;
+    padding: 0.125rem 0;
+  }
+  .ods-navbar {
+    background-color: #fff;
+    box-shadow: 0 0 1.25rem 0 rgba(0, 14, 156, 0.2);
+  }
+  .ods-navbar__container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+  }
+}
+.ods-navbar__main-menu {
+  box-sizing: border-box;
+  height: calc(100% - 3.125rem);
+  max-width: 20rem;
+  left: 0;
+  position: fixed;
+  right: 2.5rem;
+  top: 3.125rem;
+  overflow-x: hidden;
+  background-color: #fff;
+  transform-origin: left;
+  transform: translateX(-100%);
+}
+
+.ods-navbar__main-menu:not(.no-scroll) {
+  overflow-y: scroll;
+}
+
+@media (min-width: 1120px) {
+  .ods-navbar__main-menu:not(.no-scroll) {
+    overflow-y: unset;
+  }
+  .ods-navbar__main-menu {
+    height: auto;
+    max-width: none;
+    position: static;
+    overflow: visible;
+    transform: none;
+  }
+}
+.ods-navbar__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ods-navbar__list__back-link {
+  color: inherit;
+  color: #0050d7;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25em;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+
+.ods-navbar__list__back-link:before {
+  font-family: icons !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  content: "\f10d";
+  font-size: inherit;
+  color: inherit;
+}
+
+.ods-navbar__list__back-link::before {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  transform: rotate(90deg);
+}
+
+.ods-navbar__list--n1 {
+  opacity: 0;
+}
+
+.ods-navbar__list--n2,
+.ods-navbar__list--n3 {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 20rem;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #fff;
+  transform: translateX(100%);
+}
+
+.ods-navbar-item__additional-title {
+  border-bottom: 1px solid #bef1ff;
+  color: #00185e;
+}
+
+.ods-navbar-item__parent-name {
+  color: #00185e;
+}
+
+.ods-navbar-item__parent-name::after {
+  content: "";
+  border-bottom: 1px solid #e6e6e6;
+  bottom: 0;
+  left: 1rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.ods-navbar__list--n3 .ods-navbar-item__parent-name::after {
+  border-bottom: none;
+}
+
+.ods-navbar-item--n2.ods-navbar-item--additional {
+  display: block;
+  order: 3;
+  background-color: #def8ff;
+}
+
+.ods-navbar-item--back-link {
+  order: 0;
+}
+
+.ods-navbar-item--last-level {
+  order: 2;
+}
+
+@media (min-width: 1120px) {
+  .ods-navbar__list--n1 {
+    opacity: 1;
+  }
+  .ods-navbar__list--n2 {
+    display: block;
+    height: auto;
+    max-width: none;
+    width: 100%;
+    padding-top: 0;
+    bottom: auto;
+    left: 0;
+    position: absolute;
+    right: auto;
+    top: 100%;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 14, 156, 0.2);
+    transform-origin: top center;
+    transform: scaleY(0);
+  }
+  .ods-navbar__list--n3 {
+    height: auto;
+    max-width: none;
+    width: 0;
+    border-left: 0.125rem solid #def8ff;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow-y: visible;
+    opacity: 0;
+  }
+  .ods-navbar__list--grid {
+    display: grid;
+    grid-template-areas: "parent additional" "links additional";
+    grid-template-columns: 65% 35%;
+  }
+  .ods-navbar__list--grid.ods-navbar__list--n3 {
+    grid-template-areas: "links additional";
+  }
+  .ods-navbar__list--grid .ods-navbar-item--parent {
+    grid-area: parent;
+  }
+  .ods-navbar__list--grid .ods-navbar-item {
+    grid-area: links;
+  }
+  .ods-navbar__list--grid .ods-navbar-item--additional {
+    grid-area: additional;
+  }
+  .ods-navbar__list--last-level {
+    padding: 0 0.75rem;
+    list-style-type: none;
+    -moz-columns: 2 auto;
+    columns: 2 auto;
+  }
+  .ods-navbar__list--last-level.ods-navbar__list--no-cols {
+    width: 50%;
+    -moz-columns: 1;
+    columns: 1;
+  }
+  .ods-navbar__list--n3 .ods-navbar__list--last-level {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .ods-navbar__list--has-additional {
+    display: grid;
+    grid-template-areas: "parent additional" "links additional";
+    grid-template-columns: 75% 25%;
+    grid-template-rows: -webkit-min-content 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+  .ods-navbar-item {
+    -moz-column-break-inside: avoid;
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+    opacity: 0;
+  }
+  .ods-navbar-item__parent-name::after {
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+  .ods-navbar__list--n3 .ods-navbar-item__parent-name::after {
+    border-bottom: 1px solid #e6e6e6;
+    left: 1rem;
+    right: 1rem;
+  }
+  .ods-navbar-item--n1 {
+    opacity: 1;
+  }
+  .ods-navbar-item--parent {
+    grid-area: parent;
+  }
+  .ods-navbar-item--additional {
+    grid-area: additional;
+  }
+  .ods-navbar-item--last-level {
+    grid-area: links;
+  }
+  .ods-navbar-link {
+    border-bottom: none;
+    -moz-column-break-inside: avoid;
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+  }
+}
+.ods-navbar-link {
+  border: none;
+  padding: 0 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  text-align: left;
+  text-decoration: none;
+}
+
+.ods-navbar-link__title {
+  --custom-link-color: #0050d7;
+  --custom-link-hover-color: #000e9c;
+  padding: 0.5rem 0;
+  color: var(--custom-link-color);
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.ods-navbar-link--copy .ods-navbar-link__title,
+.ods-navbar-link--n1 .ods-navbar-link__title {
+  --custom-link-color: #00185e;
+  --custom-link-hover-color: var(--custom-link-color);
+  font-weight: 700;
+}
+
+.ods-navbar-link--n1 .ods-navbar-link__title {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.ods-navbar-link--n1 .ods-navbar-link__title:after {
+  font-family: icons !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  content: "\f10d";
+  font-size: inherit;
+  color: inherit;
+}
+
+.ods-navbar-link--n1 .ods-navbar-link__title::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  color: #0050d7;
+  font-size: 1.25rem;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+@media (min-width: 1120px) {
+  .ods-navbar-link--n1 .ods-navbar-link__title {
+    --custom-link-color: #0050d7;
+    --custom-link-hover-color: var(--custom-link-color);
+    border-bottom: none;
+    font-weight: 600;
+    line-height: 1em;
+  }
+  .ods-navbar-link--n1 .ods-navbar-link__title::after {
+    content: none;
+  }
+}
+.ods-navbar-link--copy .ods-navbar-link__title {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.ods-navbar-link--copy .ods-navbar-link__title:after {
+  font-family: icons !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  content: "\f103";
+  font-size: inherit;
+  color: inherit;
+}
+
+.ods-navbar-link--copy .ods-navbar-link__title::after {
+  position: static;
+  margin-left: 0.25rem;
+  color: #0050d7;
+  font-size: 1.25rem;
+  transform: none;
+}
+
+.ods-navbar-item--last-level .ods-navbar-link__title,
+.ods-navbar-item:last-of-type:not(.first-position-on-mobile) .ods-navbar-link__title,
+.ods-navbar-link--discover .ods-navbar-link__title {
+  display: block;
+  border-bottom: none;
+}
+
+.ods-navbar-item--last-level .ods-navbar-link__title,
+.ods-navbar-link--discover .ods-navbar-link__title {
+  padding: 0;
+}
+
+.ods-navbar-link--subcategory .ods-navbar-link__title {
+  --custom-link-color: #00185e;
+  --custom-link-hover-color: #00185e;
+  padding-right: 1.5rem;
+  border-bottom: 1px solid #e6e6e6;
+  font-weight: 700;
+}
+
+.ods-navbar-link--subcategory .ods-navbar-link__title:after {
+  font-family: icons !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  content: "\f10d";
+  font-size: inherit;
+  color: inherit;
+}
+
+.ods-navbar-link--subcategory .ods-navbar-link__title::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: #0050d7;
+  font-size: 1.25rem;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.ods-navbar-link__desc {
+  color: #4d5592;
+}
+
+.ods-navbar-item--last-level .ods-navbar-link,
+.ods-navbar-link--discover,
+.ods-navbar-link--n3,
+.ods-navbar__list--last-level .ods-navbar-link {
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+
+.ods-navbar-link--n1 {
+  --custom-link-hover-color: #00185e;
+}
+
+@media (min-width: 1120px) {
+  .ods-navbar-link--subcategory .ods-navbar-link__title {
+    --custom-link-color: #0050d7;
+    --custom-link-hover-color: #000e9c;
+    padding-right: 0;
+    border-bottom: none;
+    font-weight: 600;
+  }
+  .ods-navbar-link--subcategory .ods-navbar-link__title::after {
+    content: none;
+  }
+  .ods-navbar-link--n1::after {
+    content: "";
+    display: block;
+    height: 0.25rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--custom-link-hover-color);
+    transform-origin: center;
+    transform: scaleX(0);
+  }
+  .ods-navbar-link--n2,
+  .ods-navbar-link--n3 {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .ods-navbar-link--subcategory {
+    width: 20%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .ods-navbar-link--subcategory:after {
+    font-family: icons !important;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    content: "\f10d";
+    font-size: inherit;
+    color: inherit;
+  }
+  .ods-navbar-link--subcategory::after {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    opacity: 0;
+    color: #0050d7;
+    font-size: 1.25rem;
+    transform: translate(-0.5rem, -50%) rotate(-90deg);
+  }
+  .ods-navbar__list--last-level .ods-navbar-link {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+.ods-search-bar {
+  z-index: 2;
+}
+
+.ods-search-bar__wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.ods-header .ods-search-bar__wrapper {
+  position: absolute;
+  top: 3.125rem;
+  right: 0;
+  transform: translateY(-100%);
+  opacity: 0;
+  z-index: -1;
+}
+
+.ods-search-bar__autocomplete {
+  background: #fff;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  border: 1px solid #85d9fd;
+  color: #4d5592;
+  margin-top: -1px;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .ods-navbar__list__back-link {
+    font-size: 1rem;
+  }
+  .ods-search-bar__autocomplete {
+    position: absolute;
+    width: 100%;
+    right: 0;
+  }
+  .ods-header .ods-header-topbar__content__menu__item__link {
+    font-size: 1rem;
+  }
+}
+.ods-search-bar__autocomplete__category {
+  color: #00185e;
+}
+
+.ods-overlay--search {
+  z-index: auto;
+}
+
+.ods-submenu {
+  background-color: rgba(0, 0, 0, 0);
+  color: #00185e;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom: 1px solid #bef1ff;
+}
+
+@media (min-width: 1120px) {
+  .ods-search-bar__wrapper {
+    height: 100%;
+    top: 0;
+    transform-origin: right;
+  }
+  .ods-header .ods-search-bar__wrapper {
+    width: 50%;
+    top: 0;
+    transform: scaleX(0);
+  }
+  .ods-submenu {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+  }
+  .ods-submenu__title {
+    color: #00185e;
+  }
+}
+.ods-header {
+  top: 0;
+  width: 100%;
+  z-index: 1020;
+}
+
+.ods-header .ods-header-topbar {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  color: #0050d7;
+  box-shadow: 0 0 6px rgba(0, 13, 158, 0.2);
+}
+
+.ods-header .ods-header-topbar__content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1120px) {
+  .ods-header .ods-header-topbar {
+    background-color: #000e9c;
+    color: #fff;
+    box-shadow: unset;
+  }
+  .ods-header .ods-header-topbar__content {
+    padding: 0 1rem;
+  }
+}
+.ods-header .ods-header-topbar__content__logo {
+  width: 151px;
+  width: 9.4375rem;
+  height: 1.5rem;
+  color: #000e9c;
+}
+
+.ods-header .ods-header-topbar__content__menu {
+  list-style-type: none;
+}
+
+@media (min-width: 1120px) {
+  .ods-header .ods-header-topbar__content__logo {
+    color: #fff;
+  }
+  .ods-header .ods-header-topbar__content__menu__item {
+    position: relative;
+  }
+}
+.ods-header .ods-header-topbar__content__menu__item__link {
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0 1rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+@media (min-width: 1120px) {
+  .ods-header .ods-header-topbar__content__menu__item__link {
+    padding: 0;
+    border-bottom: none;
+    font-size: 0.875rem;
+  }
+}
+.ods-header .ods-header-topbar__content__menu__item__link__title {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #002dbe;
+}
+
+.ods-header .ods-header-topbar__content__menu__item__link--has-subitems .ods-header .ods-header-topbar__content__menu__item__link__title {
+  padding-right: 2rem;
+}
+
+.ods-header .ods-header-topbar__content__menu__item__link__icon-wrapper {
+  line-height: 1;
+}
+
+.ods-header .ods-header-topbar__content__menu__item__link__icon-notif {
+  position: absolute;
+  font-size: 1rem;
+}
+
+.ods-header .ods-header-topbar__content__menu__item__link .oui-icon-svg svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.ods-header .ods-header-topbar__content__menu__item__link .oui-icon-svg svg [fill*="#"] {
+  fill: #fff;
+}
+
+.ods-header .ods-header-topbar__content__menu__item__link__notif-amount {
+  box-sizing: border-box;
+  min-width: 1rem;
+  min-height: 1rem;
+  top: 0.5rem;
+  left: 1.5rem;
+  background-color: #c11b1b;
+  line-height: 1;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 1120px) and (min-width: 768px) {
+  .ods-header .ods-header-topbar__content__menu__item__link--n2 {
+    font-size: 0.875rem;
+  }
+}
+.ods-header .ods-header-topbar__content__menu__item__link--has-subitems:after,
+.ods-header .ods-header-topbar__content__menu__item__link--notifs:after {
+  font-family: icons !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  content: "\f10d";
+  font-size: inherit;
+  color: inherit;
+}
+
+.ods-header .ods-header-topbar__content__menu__item__link--has-subitems::after,
+.ods-header .ods-header-topbar__content__menu__item__link--notifs::after {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  font-size: 1.25rem;
+  color: #fff;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+@media (min-width: 1120px) {
+  .ods-header .ods-header-topbar__content__menu__item__link__title {
+    border-bottom: none;
+  }
+  .ods-header .ods-header-topbar__content__menu__item__link__title--notif {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .ods-header .ods-header-topbar__content__menu__item__link--has-subitems .ods-header-topbar__content__menu__item__link__title {
+    padding-right: 0;
+  }
+  .ods-header .ods-header-topbar__content__menu__item--n2 .ods-header-topbar__content__menu__item__link__title {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .ods-header .ods-header-topbar__content__menu__item__link__icon-notif {
+    position: static;
+  }
+  .ods-header .ods-header-topbar__content__menu__item__link__notif-amount {
+    top: 0;
+    right: 0;
+    left: auto;
+  }
+  .ods-header .ods-header-topbar__content__menu__item__link--n2 {
+    color: inherit;
+    color: #0050d7;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1em;
+    display: block;
+    padding: 0 0.5rem;
+  }
+  .ods-header .ods-header-topbar__content__menu__item:last-of-type .ods-header-topbar__content__menu__item__link--n2 {
+    border: none;
+  }
+  .ods-header .ods-header-topbar__content__menu__item__link--has-subitems::after {
+    position: static;
+    margin-left: 0.125rem;
+    font-size: 1em;
+    transform: none;
+  }
+  .ods-header .ods-header-topbar__content__menu__item__link--notifs::after {
+    content: none;
+  }
+}
+.ods-header .ods-header-topbar__content__menu__item__link--notifs {
+  width: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+
+.ods-header .ods-header-topbar__content__menu__item__back-link {
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1em;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .ods-header .ods-header-topbar__content__menu__item__back-link {
+    font-size: 1rem;
+  }
+}
+.ods-header .ods-header-topbar__content__menu__item__back-link:after {
+  font-family: icons !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  content: "\f10d";
+  font-size: inherit;
+  color: inherit;
+}
+
+.ods-header .ods-header-topbar__content__menu__item__back-link::before {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  transform: rotate(90deg);
+}
+
+.ods-header .ods-header-topbar__content__menu__item--n1 {
+  opacity: 0;
+}
+
+@media (min-width: 1120px) {
+  .ods-header .ods-header-topbar__content__menu__item--n1 {
+    padding: 0 0.5rem;
+    opacity: 1;
+  }
+  .ods-header .ods-header-topbar__content__menu__item--n2 {
+    overflow: hidden;
+  }
+  .ods-header .ods-header-topbar__content__menu__item--n2:nth-of-type(2) {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .ods-header .ods-header-topbar__content__menu__item--n2:last-of-type {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+.ods-header .ods-header-topbar__content__menu__item--manager::after {
+  content: "";
+  width: 0;
+  height: 1rem;
+  border-right: 1px solid #fff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ods-header .ods-header-topbar__content__menu--n1 {
+  background-color: #000e9c;
+}
+
+.ods-header .ods-header-topbar__content__menu--n2 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+  max-width: 20rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #000e9c;
+  transform: translateX(100%);
+}
+
+@media (min-width: 1120px) {
+  .ods-header .ods-header-topbar__content__menu--n2 {
+    display: block;
+    width: 0;
+    max-width: 10rem;
+    height: auto;
+    max-height: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    overflow: hidden;
+    opacity: 0;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1.25rem 0 rgba(0, 14, 156, 0.2);
+    transform: translate(-50%, -0.25rem);
+  }
+  .ods-header .ods-header-topbar__content__menu--n2::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid #fff;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.ods-header-button {
+  width: 50px;
+  width: 3.125rem;
+  min-height: 50px;
+  min-height: 3.125rem;
+  padding: 0;
+  border: none;
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  color: #0050d7;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.ods-header-button__content,
+.ods-header-button__content::after,
+.ods-header-button__content::before {
+  display: block;
+  width: 1rem;
+  height: 0.125rem;
+  position: relative;
+  background-color: #0050d7;
+  border-radius: 1px;
+}
+
+.ods-header-button__content::after,
+.ods-header-button__content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform-origin: center;
+}
+
+.ods-header-button__content::before {
+  top: -0.25rem;
+  transform: translateY(-100%);
+}
+
+.ods-header-button__content::after {
+  bottom: -0.25rem;
+  transform: translateY(100%);
+}
+
+.ods-header-button--search {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 3.125rem;
+  z-index: 300;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+.ods-header-button--close-search {
+  min-height: 40px;
+  min-height: 2.5rem;
+  right: 0;
+  top: 0;
+  color: #0050d7;
+}
+
+@media (min-width: 1120px) {
+  .ods-header-button--search {
+    position: static;
+    z-index: 0;
+  }
+  .ods-header-button--close-search {
+    min-height: 50px;
+    min-height: 3.125rem;
+  }
+}
+.ods-header-button--close-search .icon--close {
+  font-size: 0.75rem;
+}
+
+.ods-header__login-menu {
+  background-color: #def8ff;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 14, 156, 0.2);
+}
+
+.ods-header__login-menu__wrapper {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.ods-header__login-menu__content {
+  background-color: #fff;
+  color: #4d5592;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1.25rem 0 rgba(0, 14, 156, 0.2);
+}
+
+.ods-header__login-menu__content__icon {
+  font-size: 2.25rem;
+  color: #0050d7;
+}
+
+.ods-header__login-menu__content__icon-wrapper {
+  border: 1px solid #bef1ff;
+}
+
+.ods-header__login-menu__content__link-wrapper {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.ods-header__login-menu__content__link-wrapper:last-of-type {
+  border-bottom: none;
+}
+
+.ods-overview .oui-cta {
+  font-size: 1rem;
+}
+
+.ods-section__background--gradient-blue-triangle {
+  background: url("triangles.svg") 0 100% repeat-x, linear-gradient(90deg, #000e9c, #0050d7) no-repeat padding-box;
+}
+
+.ods-section__skew {
+  background: #fff;
+  height: 4vw;
+}
+
+.ods-section__skew--bottom {
+  bottom: -1px;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.ods-section__content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ods-language-switcher.language-switcher .language-switcher__btn .language-icon {
+  width: 24px;
+  width: 1.5rem;
+  height: 16px;
+  height: 1rem;
+  border-radius: 0.125rem;
+  margin-right: 0.25rem;
+}
+@media (min-width: 1120px) {
+  .ods-language-switcher.language-switcher .language-switcher__btn .language-icon {
+    margin-right: 0;
+  }
+}

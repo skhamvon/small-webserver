@@ -1,0 +1,38 @@
+.section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.h2 {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.item {
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.quote {
+  margin: 0 0 0.65rem;
+  font-style: normal;
+  color: var(--color-text);
+  line-height: 1.55;
+}
+
+.cite {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: normal;
+}

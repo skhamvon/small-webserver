@@ -1,0 +1,14 @@
+{
+  "terminal.integrated.env.linux": {
+    "npm_config_devdir": null,
+    "NPM_CONFIG_DEVDIR": null
+  },
+  "terminal.integrated.env.osx": {
+    "npm_config_devdir": null,
+    "NPM_CONFIG_DEVDIR": null
+  },
+  "terminal.integrated.env.windows": {
+    "npm_config_devdir": null,
+    "NPM_CONFIG_DEVDIR": null
+  }
+}
