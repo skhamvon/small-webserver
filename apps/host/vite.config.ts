@@ -14,9 +14,11 @@ export default defineConfig(({ mode }) => {
   const rootEnv = loadEnv(mode, repoRoot, "");
   const hostEnv = loadEnv(mode, process.cwd(), "");
   const env = { ...rootEnv, ...hostEnv };
+  const hostPort = Number(env.VITE_HOST_PORT ?? 5173);
+  const remotePort = Number(env.VITE_ABTEST_REMOTE_PORT ?? 5101);
   const remoteUrl =
     env.VITE_ABTEST_REMOTE_URL ||
-    "http://localhost:5001/assets/remoteEntry.js";
+    `http://localhost:${remotePort}/assets/remoteEntry.js`;
   const throttleKbps = Number(env.THROTTLE_KBPS ?? 0);
 
   return {
@@ -46,7 +48,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
-      port: 5173,
+      port: hostPort,
       strictPort: true,
     },
     build: {

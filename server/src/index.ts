@@ -21,7 +21,7 @@ const ovhDir = fs.existsSync(path.join(ovhFromDist, "index.html"))
     ? ovhFromPublic
     : null;
 
-const PORT = Number(process.env.PORT ?? 3000);
+const PORT = Number(process.env.PORT ?? 5000);
 const envThrottle = Number(process.env.THROTTLE_KBPS ?? 0);
 setThrottleKbps(
   Number.isFinite(envThrottle) && envThrottle >= 0 ? envThrottle : 0

@@ -36,3 +36,4 @@ coverage/
 # Module Federation — généré par le plugin Vite / DTS
 .__mf__temp/
 @mf-types/
+apps/abtest-remote/.mf/
