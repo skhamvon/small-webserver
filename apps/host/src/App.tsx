@@ -3,6 +3,7 @@ import { SiteLayout } from "@/layout/SiteLayout";
 import { HomePage } from "@/pages/HomePage";
 import { FastPage } from "@/pages/FastPage";
 import { HeavyPage } from "@/pages/HeavyPage";
+import { BackendAbtestDemoPage } from "@/pages/BackendAbtestDemoPage";
 
 export function App() {
   return (
@@ -11,6 +12,7 @@ export function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/demo/fast" element={<FastPage />} />
         <Route path="/demo/heavy" element={<HeavyPage />} />
+        <Route path="/demo/backend-abtest" element={<BackendAbtestDemoPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

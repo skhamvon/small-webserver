@@ -4,6 +4,7 @@ import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import dotenv from "dotenv";
 import { bandwidthThrottleMiddleware, getThrottleKbps, setThrottleKbps } from "./throttle.js";
+import { attachBackendAbtestLabRoute } from "./abtestBackendLab.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.join(__dirname, "../..");
@@ -22,6 +23,7 @@ const ovhDir = fs.existsSync(path.join(ovhFromDist, "index.html"))
     : null;
 
 const PORT = Number(process.env.PORT ?? 5000);
+const hostDevPort = Number(process.env.VITE_HOST_PORT ?? 5173);
 const envThrottle = Number(process.env.THROTTLE_KBPS ?? 0);
 setThrottleKbps(
   Number.isFinite(envThrottle) && envThrottle >= 0 ? envThrottle : 0
@@ -56,6 +58,8 @@ async function main() {
     });
   }
 
+  attachBackendAbtestLabRoute(app);
+
   const hostReady = fs.existsSync(path.join(hostDist, "index.html"));
   const remoteReady = fs.existsSync(remoteDist);
   const ovhReady = Boolean(ovhDir && fs.existsSync(path.join(ovhDir, "index.html")));
@@ -89,20 +93,22 @@ async function main() {
     app.use(
       "/",
       createProxyMiddleware({
-        target: "http://127.0.0.1:5173",
+        target: `http://127.0.0.1:${hostDevPort}`,
         changeOrigin: true,
         ws: true,
-        onProxyReq(proxyReq) {
-          proxyReq.setHeader("x-hackathon-proxy", "1");
+        on: {
+          proxyReq(proxyReq) {
+            proxyReq.setHeader("x-hackathon-proxy", "1");
+          },
         },
-      })
+      }),
     );
   }
 
   app.listen(PORT, () => {
     // eslint-disable-next-line no-console
     console.log(
-      `[server] http://127.0.0.1:${PORT}  throttleKbps=${effectiveKbps()}  hostDist=${hostReady ? "yes" : "no (proxy→5173)"}  remote=${remoteReady ? "yes" : "no"}  ovh=${ovhReady ? "yes" : "no"}`
+      `[server] http://127.0.0.1:${PORT}  throttleKbps=${effectiveKbps()}  hostDist=${hostReady ? "yes" : "no (proxy→" + hostDevPort + ")"}  remote=${remoteReady ? "yes" : "no"}  ovh=${ovhReady ? "yes" : "no"}`
     );
   });
 }

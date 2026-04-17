@@ -18,8 +18,9 @@ export default defineConfig(({ mode }) => {
   const remotePort = Number(env.VITE_ABTEST_REMOTE_PORT ?? 5101);
   const remoteUrl =
     env.VITE_ABTEST_REMOTE_URL ||
-    `http://localhost:${remotePort}/assets/remoteEntry.js`;
+    `http://localhost:${remotePort}/remote/remoteEntry.js`;
   const throttleKbps = Number(env.THROTTLE_KBPS ?? 0);
+  const nodeServerPort = Number(env.PORT ?? 5000);
 
   return {
     plugins: [
@@ -50,6 +51,12 @@ export default defineConfig(({ mode }) => {
     server: {
       port: hostPort,
       strictPort: true,
+      proxy: {
+        "/api": {
+          target: `http://127.0.0.1:${nodeServerPort}`,
+          changeOrigin: true,
+        },
+      },
     },
     build: {
       target: "chrome89",

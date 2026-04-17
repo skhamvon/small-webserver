@@ -27,6 +27,16 @@ export function HomePage() {
           </Link>
         </li>
         <li className={styles.card}>
+          <h2>A/B backend (lab)</h2>
+          <p>
+            Le serveur Node interroge l’API d’évaluation et renvoie des feature
+            flags ; fond de page selon la variante.
+          </p>
+          <Link className={styles.cta} to="/demo/backend-abtest">
+            Ouvrir
+          </Link>
+        </li>
+        <li className={styles.card}>
           <h2>Clone OVH bare-metal</h2>
           <p>Snapshot statique servi sous /ovh-bare-metal/ (via le serveur Node).</p>
           <a className={styles.cta} href="/ovh-bare-metal/">

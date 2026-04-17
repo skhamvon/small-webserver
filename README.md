@@ -12,11 +12,22 @@ Le monorepo regroupe une application **host** (Vite + React), un **remote** Modu
 
 En développement, l’interface est servie par Vite sur le **port 5173** (par défaut, configurable via `VITE_HOST_PORT`) :
 
-| Page                                               | URL (dev)                                                            |
-| -------------------------------------------------- | -------------------------------------------------------------------- |
-| Accueil (liens vers les démos)                     | [http://localhost:5173/](http://localhost:5173/)                     |
-| Démo « rapide » (page légère)                      | [http://localhost:5173/demo/fast](http://localhost:5173/demo/fast)   |
-| Démo « lourde » (contenu plus lourd, lazy loading) | [http://localhost:5173/demo/heavy](http://localhost:5173/demo/heavy) |
+| Page                                               | URL (dev)                                                                              |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Accueil (liens vers les démos)                     | [http://localhost:5173/](http://localhost:5173/)                                       |
+| Démo « rapide » (page légère)                      | [http://localhost:5173/demo/fast](http://localhost:5173/demo/fast)                     |
+| Démo « lourde » (contenu plus lourd, lazy loading) | [http://localhost:5173/demo/heavy](http://localhost:5173/demo/heavy)                   |
+| Démo **A/B backend** (serveur → API evaluate)      | [http://localhost:5173/demo/backend-abtest](http://localhost:5173/demo/backend-abtest) |
+
+### Démo A/B backend (feature flags)
+
+Le **serveur Express** appelle l’API **`abtest-solution`** (`POST /api/evaluate`, URL configurable via **`ABTEST_API_URL`**, défaut `http://127.0.0.1:5002`) et expose **`GET /api/lab/backend-abtest`**. La page React ne fait qu’afficher le résultat (fond de page + trace `console`).
+
+- **Variables** : voir [`.env.example`](.env.example) — `ABTEST_API_URL`, `ABTEST_BACKEND_DEMO_CAMPAIGN_ID` (défaut **10003**, campagne `DemoBackendCampaign` dans `abtest-campaigns-segments`).
+- **Prérequis** : lancer l’API `abtest-solution` en parallèle du lab (`npm run dev:api` ou équivalent depuis le monorepo `abtest-solution`).
+- **Dev** : le host Vite proxifie **`/api`** vers le serveur Node (`PORT`, souvent **5000**).
+
+Documentation associée : dépôt **`abtest-docs`**, page _webserver_ (table des URLs et ancre **Démo A/B backend**).
 
 ### Page clonée (OVHcloud)
 
@@ -59,7 +70,7 @@ Le **serveur Node** (port par défaut **5000**, configurable via `PORT`) peut li
 - **En développement uniquement** : routes `GET` et `POST` **`/__dev/throttle`** pour lire ou modifier la limite à chaud (JSON : `{"throttleKbps": 50}`). Ces routes sont **désactivées** si `NODE_ENV=production`.
 - **Ouvrir la démo sur `http://localhost:5173`** : le serveur Express (port 3000) ne voit pas ces requêtes ; le même `THROTTLE_KBPS` du `.env` racine est donc appliqué côté **Vite** en dev ([`apps/host/vite-plugin-dev-throttle.ts`](apps/host/vite-plugin-dev-throttle.ts)), pour que JS/CSS/chunks soient réellement ralentis. Redémarrer le dev du host après changement. Le client Vite (`/@vite/`, refresh) est exclu pour garder le dev utilisable.
 - **Passer par `http://127.0.0.1:3000`** (proxy vers Vite) : la limitation est assurée **uniquement** par le serveur Node ; Vite ne re-throttle pas (en-tête interne) pour éviter un double ralentissement.
-- **Remote Module Federation** (`:5001`) : le navigateur charge ce JS **directement** depuis le remote — ce flux **n’est pas** limité par le throttle du host ni par défaut par le serveur 3000.
+- **Remote Module Federation** : le navigateur charge le `remoteEntry.js` **directement** depuis l’URL **`VITE_ABTEST_REMOTE_URL`** (voir [`apps/host/.env.development`](apps/host/.env.development) et [`.env.example`](.env.example)). En configuration courante pour le dépôt parent, le host pointe vers le remote **`abtest-solution`** (`http://localhost:5001/remoteEntry.js`, port `VITE_REMOTE_PORT`) ; il faut alors ce remote **et** l’API `abtest-solution` (p.ex. `npm run dev` à la racine du repo **hackathon-abtest**). Le package interne **`apps/abtest-remote`** (port **5101**, `…/remote/remoteEntry.js`) reste un stub : réaffectez cette URL si vous ne lancez que ce monorepo. Ce flux **n’est pas** limité par le throttle du host ni par défaut par le serveur Node.
 
 Détails d’implémentation : [server/src/throttle.ts](server/src/throttle.ts).
 
@@ -93,7 +104,7 @@ Le serveur écoute par défaut sur le **port 5000** (`PORT` modifiable). La limi
 
 ## Lancement en développement
 
-Lancer **en parallèle** le remote Module Federation (port par défaut **5101**, configurable via `VITE_ABTEST_REMOTE_PORT`), le host Vite (port par défaut **5173**, configurable via `VITE_HOST_PORT`) et le serveur Express (port par défaut **5000**, configurable via `PORT`) :
+Lancer **en parallèle** le remote MF attendu par **`VITE_ABTEST_REMOTE_URL`** (souvent le remote **abtest-solution** sur **5001**, voir ci-dessus), le host Vite (port par défaut **5173**, `VITE_HOST_PORT`) et le serveur Express (port par défaut **5000**, `PORT`). Le stub **`apps/abtest-remote`** (défaut **5101**, `VITE_ABTEST_REMOTE_PORT`) n’est requis que si vous pointez explicitement vers lui :
 
 ```bash
 npm run dev
