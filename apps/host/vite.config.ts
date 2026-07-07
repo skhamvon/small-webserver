@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { devBandwidthThrottle } from "./vite-plugin-dev-throttle";
 import { ovhBareMetalStatic } from "./vite-plugin-ovh-static";
+import { viteDevServerNetwork } from "../../viteDevServer";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ovhPublicRoot = path.resolve(__dirname, "public/ovh-bare-metal");
@@ -21,6 +22,7 @@ export default defineConfig(({ mode }) => {
     `http://localhost:${remotePort}/remote/remoteEntry.js`;
   const throttleKbps = Number(env.THROTTLE_KBPS ?? 0);
   const nodeServerPort = Number(env.PORT ?? 5000);
+  const devNetwork = viteDevServerNetwork(env);
 
   return {
     plugins: [
@@ -49,6 +51,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
+      ...devNetwork,
       port: hostPort,
       strictPort: true,
       proxy: {
