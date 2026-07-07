@@ -8,6 +8,10 @@ dist/
 .env
 .env.*.local
 *.local
+# Overrides locaux par app (ex. apps/remote/.env) — les modèles restent en *.example
+apps/**/.env
+!apps/host/.env.development
+!apps/host/.env.production
 
 # OS
 .DS_Store
